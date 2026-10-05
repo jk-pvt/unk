@@ -4,6 +4,9 @@ WORKDIR /app
 # Copy dependency specifications
 COPY package*.json ./
 
+# C toolchain: the demo engine compiles firmware/host/engine.c at startup
+RUN apk add --no-cache build-base
+
 # Install production dependencies only
 RUN npm ci --omit=dev
 
@@ -11,6 +14,15 @@ RUN npm ci --omit=dev
 COPY server ./server
 COPY shared ./shared
 COPY data ./data
+COPY firmware/src ./firmware/src
+COPY firmware/host ./firmware/host
+COPY hardware/analog/design_results.json ./hardware/analog/design_results.json
+
+# Fail the image build (not demo mode at runtime) if the C engine does not compile
+RUN cc -O2 -std=c11 -Wall -Wextra -Werror -I firmware/src \
+      firmware/host/engine.c firmware/src/control.c firmware/src/command.c firmware/src/adaptation.c \
+      firmware/src/waveform.c firmware/src/telemetry.c firmware/src/capture.c \
+      -lm -o /tmp/engine-check && rm /tmp/engine-check
 
 # Setup environment variables
 ENV NODE_ENV=production
