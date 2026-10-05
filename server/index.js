@@ -48,18 +48,24 @@ const wss = new WebSocketServer({
 });
 app.use(express.json({ limit: process.env.JSON_LIMIT || "1mb" }));
 
+// Same-origin requests (page and API behind the same proxy) are always allowed.
+function originAllowed(req) {
+  const origin = req.headers.origin;
+  if (!origin || allowedOrigins.includes("*") || allowedOrigins.includes(origin)) return true;
+  try {
+    return new URL(origin).host === req.headers.host;
+  } catch {
+    return false;
+  }
+}
+
 // Security & CORS validation middleware
 app.use((req, res, next) => {
   const reqHost = (req.headers.host || "").split(":")[0];
   if (allowedHosts && !allowedHosts.includes(reqHost) && !allowedHosts.includes("*")) {
     return res.status(403).json({ error: "Host denied" });
   }
-  if (
-    req.method !== "GET" &&
-    req.headers.origin &&
-    !allowedOrigins.includes("*") &&
-    !allowedOrigins.includes(req.headers.origin)
-  ) {
+  if (req.method !== "GET" && !originAllowed(req)) {
     return res.status(403).json({ error: "Origin denied" });
   }
   next();
@@ -242,16 +248,7 @@ function broadcast() {
     if (c.readyState === 1 && c.bufferedAmount < 2e6) c.send(json);
 }
 wss.on("connection", (socket, req) => {
-  if (
-    req.headers.origin &&
-    ![
-      "http://localhost:5173",
-      "http://127.0.0.1:5173",
-      `http://localhost:${bridgePort}`,
-      `http://127.0.0.1:${bridgePort}`,
-    ].includes(req.headers.origin)
-  )
-    return socket.close(1008, "Origin denied");
+  if (!originAllowed(req)) return socket.close(1008, "Origin denied");
   socket.on("message", message => {
     try {
       const p = JSON.parse(String(message));

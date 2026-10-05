@@ -1,5 +1,5 @@
-version: '3.8'
-
+# Everything is reached through one port: 6002.
+# Host Nginx (TLS) -> 127.0.0.1:6002 -> web (internal Nginx) -> backend:6002 (private network only)
 services:
   backend:
     build:
@@ -8,9 +8,14 @@ services:
     container_name: aquasdr-backend
     restart: always
     env_file:
-      - .env
+      - path: .env
+        required: false
     environment:
-      - PORT=4318
+      - PORT=6002
+      - HOST=0.0.0.0
+      - AQUASDR_DATA_DIR=/app/data
+    expose:
+      - "6002"
     volumes:
       - ./data:/app/data
 
@@ -21,10 +26,10 @@ services:
     container_name: aquasdr-web
     restart: always
     ports:
-      - "6002:6002"
+      - "127.0.0.1:6002:6002"
     environment:
       - NGINX_PORT=6002
       - BACKEND_HOST=backend
-      - BACKEND_PORT=4318
+      - BACKEND_PORT=6002
     depends_on:
       - backend

@@ -14,10 +14,10 @@ COPY data ./data
 
 # Setup environment variables
 ENV NODE_ENV=production
-ENV PORT=4318
+ENV PORT=6002
 ENV HOST=0.0.0.0
 
-EXPOSE 4318
+EXPOSE 6002
 
 # Start backend server
 CMD ["node", "server/index.js"]
