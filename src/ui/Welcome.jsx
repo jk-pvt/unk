@@ -8,7 +8,7 @@ export function Welcome({ connected, hardware, onDemo, onConnect, onExisting }) 
   const [rotating, setRotating] = useState(true);
   const [ports, setPorts] = useState([]), [port, setPort] = useState('');
   const [busy, setBusy] = useState(false), [error, setError] = useState('');
-  const local = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
+  const local = true; // Allow hardware connection from any host (VPS backend ports)
   useEffect(() => {
     const node = dialog.current;
     node.showModal();

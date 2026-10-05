@@ -550,7 +550,7 @@ function App() {
                     New session…
                   </button>
                 </div>
-                <p className="fine mono">Bridge 127.0.0.1:4318 · sessions in AquaSDR/data · console never commands hardware</p>
+                <p className="fine mono">Bridge {location.host} · sessions in AquaSDR/data · console never commands hardware</p>
               </>
             )}
             {dialog === "session" && (
