@@ -1,0 +1,23 @@
+FROM node:20-alpine
+WORKDIR /app
+
+# Copy dependency specifications
+COPY package*.json ./
+
+# Install production dependencies only
+RUN npm ci --omit=dev
+
+# Copy project source files
+COPY server ./server
+COPY shared ./shared
+COPY data ./data
+
+# Setup environment variables
+ENV NODE_ENV=production
+ENV PORT=4318
+ENV HOST=0.0.0.0
+
+EXPOSE 4318
+
+# Start backend server
+CMD ["node", "server/index.js"]

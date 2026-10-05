@@ -4,12 +4,27 @@ services:
   backend:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.backend
     container_name: aquasdr-backend
+    restart: always
+    env_file:
+      - .env
+    environment:
+      - PORT=4318
+    volumes:
+      - ./data:/app/data
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    container_name: aquasdr-web
     restart: always
     ports:
       - "6002:6002"
-    env_file:
-      - .env
-    volumes:
-      - ./data:/app/data
+    environment:
+      - NGINX_PORT=6002
+      - BACKEND_HOST=backend
+      - BACKEND_PORT=4318
+    depends_on:
+      - backend
