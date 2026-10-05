@@ -1,0 +1,12 @@
+node_modules/
+dist/
+data/*
+!data/.gitkeep
+*.log
+.DS_Store
+firmware/build/
+firmware/build-adaptive/
+
+firmware/build-host/
+!data/bench/
+arduino/*/build*/

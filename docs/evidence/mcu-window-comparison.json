@@ -1,0 +1,318 @@
+{
+ "when": "2026-10-02T06:49:48.304Z",
+ "note": "MCU ADC CAPTURE, not oscilloscope measurements",
+ "results": [
+  {
+   "label": "window RECT",
+   "name": "mcu-20261002064934-6-pulse",
+   "allPass": true,
+   "rows": [
+    {
+     "name": "FFT peak",
+     "measured": 41.0003662109375,
+     "computed": 41.0003662109375,
+     "nominal": 42,
+     "unit": "kHz",
+     "error": 0,
+     "tolerance": 4,
+     "pass": true
+    },
+    {
+     "name": "Spectral centroid",
+     "measured": 41.947791953210285,
+     "computed": 41.94482342536166,
+     "nominal": 42,
+     "unit": "kHz",
+     "error": 0.0029685278486226707,
+     "tolerance": 0.5,
+     "pass": true
+    },
+    {
+     "name": "Occupied bandwidth (99 %)",
+     "measured": 11.5203857421875,
+     "computed": 11.53564453125,
+     "nominal": null,
+     "unit": "kHz",
+     "error": -0.0152587890625,
+     "tolerance": 2.8839111328125,
+     "pass": true
+    },
+    {
+     "name": "Pulse duration (10 % envelope, informational)",
+     "measured": 2.018,
+     "computed": 2.018,
+     "nominal": 2,
+     "unit": "ms",
+     "error": 0,
+     "tolerance": 0.1009,
+     "pass": null,
+     "informational": true
+    },
+    {
+     "name": "Pulse duration (20 % envelope)",
+     "measured": 2.006,
+     "computed": 2.004,
+     "nominal": 2,
+     "unit": "ms",
+     "error": 0.0019999999999997797,
+     "tolerance": 0.1002,
+     "pass": true
+    },
+    {
+     "name": "Peak-to-peak",
+     "measured": 1.1684981684981683,
+     "computed": 1.1539926739926738,
+     "nominal": 1.1547179487179484,
+     "unit": "V",
+     "error": 0.014505494505494543,
+     "tolerance": 0.11539926739926738,
+     "pass": true
+    },
+    {
+     "name": "Out-of-band leakage",
+     "measured": -14.615044322778576,
+     "computed": -14.587072892601551,
+     "nominal": null,
+     "unit": "dB",
+     "error": -0.027971430177025525,
+     "tolerance": 6,
+     "pass": true
+    }
+   ]
+  },
+  {
+   "label": "window HANN",
+   "name": "mcu-20261002064939-7-pulse",
+   "allPass": true,
+   "rows": [
+    {
+     "name": "FFT peak",
+     "measured": 41.99981689453125,
+     "computed": 41.99981689453125,
+     "nominal": 42,
+     "unit": "kHz",
+     "error": 0,
+     "tolerance": 4,
+     "pass": true
+    },
+    {
+     "name": "Spectral centroid",
+     "measured": 41.996458632167545,
+     "computed": 41.99830544528191,
+     "nominal": 42,
+     "unit": "kHz",
+     "error": -0.001846813114362078,
+     "tolerance": 0.5,
+     "pass": true
+    },
+    {
+     "name": "Occupied bandwidth (99 %)",
+     "measured": 3.4942626953125,
+     "computed": 3.509521484375,
+     "nominal": null,
+     "unit": "kHz",
+     "error": -0.0152587890625,
+     "tolerance": 0.87738037109375,
+     "pass": true
+    },
+    {
+     "name": "Pulse duration (10 % envelope, informational)",
+     "measured": 1.624,
+     "computed": 1.588,
+     "nominal": 2,
+     "unit": "ms",
+     "error": 0.03600000000000003,
+     "tolerance": 0.0794,
+     "pass": null,
+     "informational": true
+    },
+    {
+     "name": "Pulse duration (20 % envelope)",
+     "measured": 1.418,
+     "computed": 1.408,
+     "nominal": 2,
+     "unit": "ms",
+     "error": 0.010000000000000009,
+     "tolerance": 0.07039999999999999,
+     "pass": true
+    },
+    {
+     "name": "Peak-to-peak",
+     "measured": 1.1483516483516483,
+     "computed": 1.1539926739926738,
+     "nominal": 1.1547179487179484,
+     "unit": "V",
+     "error": -0.005641025641025532,
+     "tolerance": 0.11539926739926738,
+     "pass": true
+    },
+    {
+     "name": "Out-of-band leakage",
+     "measured": -34.951275846009906,
+     "computed": -34.67690123624182,
+     "nominal": null,
+     "unit": "dB",
+     "error": -0.27437460976808836,
+     "tolerance": 6,
+     "pass": true
+    }
+   ]
+  },
+  {
+   "label": "window HAMMING",
+   "name": "mcu-20261002064943-8-pulse",
+   "allPass": true,
+   "rows": [
+    {
+     "name": "FFT peak",
+     "measured": 42.06085205078125,
+     "computed": 41.9921875,
+     "nominal": 42,
+     "unit": "kHz",
+     "error": 0.06866455078125,
+     "tolerance": 4,
+     "pass": true
+    },
+    {
+     "name": "Spectral centroid",
+     "measured": 41.99949347310879,
+     "computed": 41.99910441600754,
+     "nominal": 42,
+     "unit": "kHz",
+     "error": 0.0003890571012519217,
+     "tolerance": 0.5,
+     "pass": true
+    },
+    {
+     "name": "Occupied bandwidth (99 %)",
+     "measured": 3.4942626953125,
+     "computed": 3.5400390625,
+     "nominal": null,
+     "unit": "kHz",
+     "error": -0.0457763671875,
+     "tolerance": 0.885009765625,
+     "pass": true
+    },
+    {
+     "name": "Pulse duration (10 % envelope, informational)",
+     "measured": 1.926,
+     "computed": 1.8079999999999998,
+     "nominal": 2,
+     "unit": "ms",
+     "error": 0.1180000000000001,
+     "tolerance": 0.0904,
+     "pass": null,
+     "informational": true
+    },
+    {
+     "name": "Pulse duration (20 % envelope)",
+     "measured": 1.536,
+     "computed": 1.528,
+     "nominal": 2,
+     "unit": "ms",
+     "error": 0.008000000000000007,
+     "tolerance": 0.07640000000000001,
+     "pass": true
+    },
+    {
+     "name": "Peak-to-peak",
+     "measured": 1.1547985347985348,
+     "computed": 1.1539926739926738,
+     "nominal": 1.1547179487179484,
+     "unit": "V",
+     "error": 0.0008058608058609806,
+     "tolerance": 0.11539926739926738,
+     "pass": true
+    },
+    {
+     "name": "Out-of-band leakage",
+     "measured": -35.124134599313294,
+     "computed": -32.657823738883295,
+     "nominal": null,
+     "unit": "dB",
+     "error": -2.4663108604299993,
+     "tolerance": 6,
+     "pass": true
+    }
+   ]
+  },
+  {
+   "label": "window BLACKMAN",
+   "name": "mcu-20261002064947-9-pulse",
+   "allPass": true,
+   "rows": [
+    {
+     "name": "FFT peak",
+     "measured": 41.99981689453125,
+     "computed": 41.99981689453125,
+     "nominal": 42,
+     "unit": "kHz",
+     "error": 0,
+     "tolerance": 4,
+     "pass": true
+    },
+    {
+     "name": "Spectral centroid",
+     "measured": 41.996523595449936,
+     "computed": 41.996514014085705,
+     "nominal": 42,
+     "unit": "kHz",
+     "error": 0.000009581364231792122,
+     "tolerance": 0.5,
+     "pass": true
+    },
+    {
+     "name": "Occupied bandwidth (99 %)",
+     "measured": 3.19671630859375,
+     "computed": 3.23486328125,
+     "nominal": null,
+     "unit": "kHz",
+     "error": -0.03814697265625,
+     "tolerance": 0.8087158203125,
+     "pass": true
+    },
+    {
+     "name": "Pulse duration (10 % envelope, informational)",
+     "measured": 1.45,
+     "computed": 1.4020000000000001,
+     "nominal": 2,
+     "unit": "ms",
+     "error": 0.04799999999999982,
+     "tolerance": 0.07010000000000001,
+     "pass": null,
+     "informational": true
+    },
+    {
+     "name": "Pulse duration (20 % envelope)",
+     "measured": 1.204,
+     "computed": 1.2,
+     "nominal": 2,
+     "unit": "ms",
+     "error": 0.0040000000000000036,
+     "tolerance": 0.06,
+     "pass": true
+    },
+    {
+     "name": "Peak-to-peak",
+     "measured": 1.138681318681319,
+     "computed": 1.1539926739926738,
+     "nominal": 1.1547179487179484,
+     "unit": "V",
+     "error": -0.015311355311354857,
+     "tolerance": 0.11539926739926738,
+     "pass": true
+    },
+    {
+     "name": "Out-of-band leakage",
+     "measured": -37.520830169785874,
+     "computed": -36.45688546287576,
+     "nominal": null,
+     "unit": "dB",
+     "error": -1.0639447069101138,
+     "tolerance": 6,
+     "pass": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+/* Black instrument-console palette. */
+:root { --bg:#000; --bg2:#030303; --bg3:#070707; --ink2:#a5aaa9; --ink3:#7b8280; --line:rgba(200,214,209,.08); --glass:linear-gradient(145deg,rgba(23,27,26,.88),rgba(8,10,10,.96)); --glass-edge:rgba(187,207,198,.13); }
+.app,.v-mission { background:#000; }
+.app::before { opacity:.3; }
+.top,.strip { background:#030404; }
+.mission-payload { --glass:linear-gradient(145deg,#141817d9,#070a09f2); --glass-edge:#b9cec21b; --ink2:#a5aaa9; --ink3:#7b8280; grid-template-rows:minmax(320px,1fr) 166px 278px; min-height:810px; }
+.mission-payload > .st-sonar { background:#030706; }
+.payload-heading h1 span { color:#898f8d; }
+.payload-open { background:#111513; border-color:#343e39; }
+.payload-open:hover { background:#1b2420; }
+.payload-viewer { background:#030403; border-color:#414a44; }
+.payload-image-button img { object-fit:cover; mix-blend-mode:normal; }
+.payload-heading { padding-top:12px; }
+.payload-reference,.payload-view-label { color:#78847d; }
+.mission-payload .m-low { grid-template-columns:minmax(375px,1.15fr) minmax(300px,1.12fr) minmax(190px,.7fr); }
+.physical-power { padding:13px; gap:9px; min-width:0; background:linear-gradient(140deg,#171e1bc2,#080c0af2); border-color:#778b802d; border-radius:12px; }
+.physical-power::before { display:none; }
+.power-source { display:flex; gap:5px; align-items:center; }
+.power-source .ibtn { height:20px; width:20px; }
+.power-inner { display:flex; flex-direction:column; min-height:0; flex:1; padding:12px 12px 10px; border:1px solid #9aafa225; border-radius:10px; background:linear-gradient(125deg,#252e293b,#1a211d5e); box-shadow:inset 0 1px 1px #ffffff0a; }
+.power-object-area { position:relative; min-height:0; flex:1; }
+.power-charge { position:absolute; top:0; left:0; z-index:1; pointer-events:none; }
+.power-charge > span,.power-estimates > div > span { display:block; font-size:9px; color:#a4b0a9; letter-spacing:.04em; }
+.power-charge strong { display:block; color:#84dba2; font-size:29px; font-weight:400; letter-spacing:-.03em; margin-top:3px; }
+.power-charge small { font-size:17px; }
+.power-physical { position:absolute; top:17px; left:-13px; bottom:5px; right:102px; }
+.battery-module { position:relative; width:100%; height:100%; }
+.battery-module canvas { display:block; width:100%; height:100%; }
+.power-estimates { position:absolute; top:0; right:0; width:108px; display:flex; flex-direction:column; gap:12px; }
+.power-estimates > div:first-child { padding-bottom:10px; border-bottom:1px solid #a6b6ac1c; }
+.power-estimates b { display:block; font-size:18px; font-weight:400; color:#e3eae5; margin-top:4px; }
+.power-estimates u { font-size:11px; color:#929f96; margin-left:5px; }
+.power-estimates em { display:block; font-size:8px; color:#76867a; margin-top:3px; }
+.power-object-caption { position:absolute; bottom:5px; left:0; font:7px var(--mono); letter-spacing:.1em; color:#738279; }
+.power-object-caption span { margin-left:9px; color:#607168; }
+.power-telemetry { display:grid; grid-template-columns:1fr 1fr 1fr 1.4fr; padding-top:9px; border-top:1px solid #8fa29625; gap:8px; }
+.power-telemetry > div { min-width:0; }
+.power-telemetry dt { font-size:8px; color:#a0ada4; white-space:nowrap; }
+.power-telemetry dd { font-size:15px; margin-top:4px; white-space:nowrap; }
+.power-telemetry u { font-size:10px; color:#87988c; margin-left:3px; }
+.power-telemetry .power-state { display:flex; align-items:center; gap:5px; font-size:10px; min-height:21px; }
+.power-detail-foot { display:flex; justify-content:space-between; font-size:11px; color:#8b978f; padding:10px 4px; }
+.power-detail-foot b { display:block; color:#c6d2ca; margin-top:5px; font-weight:400; }
+.physical-power.power-lg { width:min(600px,44vw); min-height:590px; padding:20px; }
+.physical-power.power-lg .power-inner { min-height:335px; }
+.physical-power.power-lg .power-charge strong { font-size:45px; }
+.physical-power.power-lg .power-charge small { font-size:24px; }
+.physical-power.power-lg .power-charge > span,.physical-power.power-lg .power-estimates > div > span { font-size:11px; }
+.physical-power.power-lg .power-estimates { width:145px; gap:22px; }
+.physical-power.power-lg .power-estimates b { font-size:23px; }
+.physical-power.power-lg .power-physical { right:130px; top:42px; bottom:10px; }
+.physical-power.power-lg .power-object-caption { font-size:9px; }
+.physical-power.power-lg .power-telemetry dt { font-size:10px; }
+.physical-power.power-lg .power-telemetry dd { font-size:19px; }
+.physical-power.power-lg .power-telemetry .power-state { font-size:12px; }
+.battery-demo { padding:12px; background:#040705; border:1px solid #60756a30; border-radius:8px; }
+.battery-demo-title { display:flex; justify-content:space-between; align-items:center; gap:10px; font:9px var(--mono); color:#b5bdad; letter-spacing:.05em; }
+.battery-demo-title button { font:10px var(--sans); color:#b8c7bd; }
+.battery-demo-actions { display:flex; gap:6px; margin-top:12px; flex-wrap:wrap; }
+.battery-demo-actions button { padding:7px 10px; font-size:11px; color:#c9d8ce; border:1px solid #4f63554f; border-radius:5px; background:#15221975; }
+.battery-demo-actions button:hover { background:#253a2b; }
+.battery-demo p { font-size:10px; color:#839189; margin-top:10px; }
+@media (max-width:1500px) {
+ .mission-payload { grid-template-rows:minmax(320px,1fr) 145px 270px; min-height:755px; }
+ .mission-payload .m-low { grid-template-columns:minmax(350px,1.2fr) minmax(220px,1fr) minmax(160px,.7fr); }
+
+}
+@media (max-width:1100px) {
+ .mission-payload { grid-template-rows:380px 220px auto auto; }
+ .mission-payload .m-low { grid-template-columns:1fr 1fr; min-height:280px; }
+ .physical-power.power-lg { width:100%; }
+}

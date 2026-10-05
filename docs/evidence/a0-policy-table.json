@@ -1,0 +1,49 @@
+{
+ "source": "firmware/src/adaptation.c swept with its own smoothing, settle and hysteresis",
+ "fullScaleCounts": 2854,
+ "levelDefinition": "level % = raw counts * 100 / 2854 (TDS board 0 to 2.3 V assumed full scale)",
+ "firstDecision": {
+  "note": "First decision after the input becomes valid has no hysteresis: below 35 % is CLEAR, 35 to 70 % TRANSITION, 70 % and above MURKY",
+  "clearBelowPct": 35,
+  "murkyFromPct": 70
+ },
+ "transitions": [
+  {
+   "direction": "rising",
+   "atLevelPct": 40.25,
+   "from": "CLEAR",
+   "to": "TRANSITION",
+   "adcCounts": 1149,
+   "millivoltsAtPin": 926
+  },
+  {
+   "direction": "rising",
+   "atLevelPct": 75.25,
+   "from": "TRANSITION",
+   "to": "MURKY",
+   "adcCounts": 2148,
+   "millivoltsAtPin": 1731
+  },
+  {
+   "direction": "falling",
+   "atLevelPct": 64.75,
+   "from": "MURKY",
+   "to": "TRANSITION",
+   "adcCounts": 1848,
+   "millivoltsAtPin": 1489
+  },
+  {
+   "direction": "falling",
+   "atLevelPct": 29.75,
+   "from": "TRANSITION",
+   "to": "CLEAR",
+   "adcCounts": 849,
+   "millivoltsAtPin": 684
+  }
+ ],
+ "caveats": [
+  "TDS_PROXY: a conductivity-type reading, not turbidity",
+  "millivolts assume the 3.3 V ADC reference",
+  "the actual relation between salt concentration and A0 voltage is that of the installed TDS board and is not characterised here"
+ ]
+}

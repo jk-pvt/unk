@@ -1,0 +1,603 @@
+{
+ "clustering": {
+  "capturesWithAnySpike": 3,
+  "of": 13,
+  "spikesPerCapture": [
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   7,
+   0,
+   0,
+   50
+  ]
+ },
+ "interpretation": "Spikes are bursty: most captures have none and a few have many, so a single spikes-per-second rate would be misleading and is reported only as a ratio of captures. No source is established.",
+ "when": "2026-10-02T07:21:21.301Z",
+ "note": "Spikes in the quiet parts of MCU ADC captures of the raw DAC pin. Source not established by this analysis.",
+ "rule": "|x - median| > max(6 sigma, 20 counts), pulse regions plus 0.6 ms excluded",
+ "pulseMode500kSps": {
+  "captures": 12,
+  "quietSeconds": 0.1111,
+  "spikes": 57,
+  "perSecond": 513,
+  "perSecond95": [
+   388.5,
+   664.7
+  ]
+ },
+ "trainMode100kSps": {
+  "captures": 1,
+  "quietSeconds": 0.1545,
+  "spikes": 3,
+  "perSecond": 19.4,
+  "perSecond95": [
+   3.9,
+   56.7
+  ]
+ },
+ "captures": [
+  {
+   "file": "mcu-20261002064934-6-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "RECT",
+   "cls": "LFM CHIRP",
+   "samples": 6000,
+   "quietSamples": 4550,
+   "quietMs": 9.1,
+   "baselineCounts": 2054,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": []
+  },
+  {
+   "file": "mcu-20261002064939-7-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "HANN",
+   "cls": "LFM CHIRP",
+   "samples": 6000,
+   "quietSamples": 4660,
+   "quietMs": 9.32,
+   "baselineCounts": 2054,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": []
+  },
+  {
+   "file": "mcu-20261002064943-8-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "HAMMING",
+   "cls": "LFM CHIRP",
+   "samples": 6000,
+   "quietSamples": 4597,
+   "quietMs": 9.194,
+   "baselineCounts": 2054,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": []
+  },
+  {
+   "file": "mcu-20261002064947-9-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "BLACKMAN",
+   "cls": "LFM CHIRP",
+   "samples": 6000,
+   "quietSamples": 4713,
+   "quietMs": 9.426,
+   "baselineCounts": 2054,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": []
+  },
+  {
+   "file": "mcu-20261002065005-10-train",
+   "mode": "train",
+   "rate": 100000,
+   "window": "HANN",
+   "cls": "LFM CHIRP",
+   "samples": 16000,
+   "quietSamples": 15455,
+   "quietMs": 154.54999999999998,
+   "baselineCounts": 2054,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": [
+    {
+     "atMs": 14.43,
+     "widthSamples": 1,
+     "counts": 315,
+     "peak": 315
+    },
+    {
+     "atMs": 17.55,
+     "widthSamples": 1,
+     "counts": -62,
+     "peak": -62
+    },
+    {
+     "atMs": 28.98,
+     "widthSamples": 1,
+     "counts": 53,
+     "peak": 53
+    }
+   ]
+  },
+  {
+   "file": "mcu-20261002071313-11-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "HANN",
+   "cls": "LFM CHIRP",
+   "samples": 6000,
+   "quietSamples": 4654,
+   "quietMs": 9.308,
+   "baselineCounts": 2053,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": []
+  },
+  {
+   "file": "mcu-20261002071317-12-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "HANN",
+   "cls": "GEOMETRIC SWEEP",
+   "samples": 6000,
+   "quietSamples": 4648,
+   "quietMs": 9.296000000000001,
+   "baselineCounts": 2054,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": []
+  },
+  {
+   "file": "mcu-20261002071321-13-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "HANN",
+   "cls": "PHASE-CODED PULSE",
+   "samples": 6000,
+   "quietSamples": 4659,
+   "quietMs": 9.318,
+   "baselineCounts": 2054,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": []
+  },
+  {
+   "file": "mcu-20261002071723-14-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "RECT",
+   "cls": "PHASE-CODED PULSE",
+   "samples": 6000,
+   "quietSamples": 4550,
+   "quietMs": 9.1,
+   "baselineCounts": 2054,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": []
+  },
+  {
+   "file": "mcu-20261002071728-15-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "HANN",
+   "cls": "PHASE-CODED PULSE",
+   "samples": 6000,
+   "quietSamples": 4659,
+   "quietMs": 9.318,
+   "baselineCounts": 2054,
+   "sigmaCounts": 8.9,
+   "thresholdCounts": 53.4,
+   "spikes": [
+    {
+     "atMs": 2.862,
+     "widthSamples": 1,
+     "counts": -56,
+     "peak": -56
+    },
+    {
+     "atMs": 6.792,
+     "widthSamples": 1,
+     "counts": -326,
+     "peak": -326
+    },
+    {
+     "atMs": 8.164,
+     "widthSamples": 1,
+     "counts": -332,
+     "peak": -332
+    },
+    {
+     "atMs": 10.386,
+     "widthSamples": 1,
+     "counts": -158,
+     "peak": -158
+    },
+    {
+     "atMs": 10.736,
+     "widthSamples": 1,
+     "counts": 98,
+     "peak": 98
+    },
+    {
+     "atMs": 11.148,
+     "widthSamples": 1,
+     "counts": -90,
+     "peak": -90
+    },
+    {
+     "atMs": 11.432,
+     "widthSamples": 1,
+     "counts": -350,
+     "peak": -350
+    }
+   ]
+  },
+  {
+   "file": "mcu-20261002071732-16-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "HAMMING",
+   "cls": "PHASE-CODED PULSE",
+   "samples": 6000,
+   "quietSamples": 4605,
+   "quietMs": 9.209999999999999,
+   "baselineCounts": 2054,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": []
+  },
+  {
+   "file": "mcu-20261002071736-17-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "BLACKMAN",
+   "cls": "PHASE-CODED PULSE",
+   "samples": 6000,
+   "quietSamples": 4708,
+   "quietMs": 9.416,
+   "baselineCounts": 2054,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": []
+  },
+  {
+   "file": "mcu-20261002071743-18-pulse",
+   "mode": "pulse",
+   "rate": 500000,
+   "window": "RECT",
+   "cls": "GEOMETRIC SWEEP",
+   "samples": 6000,
+   "quietSamples": 4550,
+   "quietMs": 9.1,
+   "baselineCounts": 2054,
+   "sigmaCounts": 7.41,
+   "thresholdCounts": 44.5,
+   "spikes": [
+    {
+     "atMs": 5.138,
+     "widthSamples": 1,
+     "counts": 66,
+     "peak": 66
+    },
+    {
+     "atMs": 5.372,
+     "widthSamples": 1,
+     "counts": 72,
+     "peak": 72
+    },
+    {
+     "atMs": 5.53,
+     "widthSamples": 1,
+     "counts": 64,
+     "peak": 64
+    },
+    {
+     "atMs": 5.606,
+     "widthSamples": 1,
+     "counts": 58,
+     "peak": 58
+    },
+    {
+     "atMs": 5.764,
+     "widthSamples": 1,
+     "counts": 62,
+     "peak": 62
+    },
+    {
+     "atMs": 6.01,
+     "widthSamples": 1,
+     "counts": -54,
+     "peak": -54
+    },
+    {
+     "atMs": 6.088,
+     "widthSamples": 1,
+     "counts": 54,
+     "peak": 54
+    },
+    {
+     "atMs": 6.246,
+     "widthSamples": 1,
+     "counts": 62,
+     "peak": 62
+    },
+    {
+     "atMs": 6.48,
+     "widthSamples": 1,
+     "counts": 62,
+     "peak": 62
+    },
+    {
+     "atMs": 6.638,
+     "widthSamples": 1,
+     "counts": 50,
+     "peak": 50
+    },
+    {
+     "atMs": 6.714,
+     "widthSamples": 1,
+     "counts": 66,
+     "peak": 66
+    },
+    {
+     "atMs": 6.872,
+     "widthSamples": 1,
+     "counts": 58,
+     "peak": 58
+    },
+    {
+     "atMs": 6.986,
+     "widthSamples": 1,
+     "counts": 49,
+     "peak": 49
+    },
+    {
+     "atMs": 7.062,
+     "widthSamples": 1,
+     "counts": 56,
+     "peak": 56
+    },
+    {
+     "atMs": 7.142,
+     "widthSamples": 1,
+     "counts": -64,
+     "peak": -64
+    },
+    {
+     "atMs": 7.372,
+     "widthSamples": 1,
+     "counts": 67,
+     "peak": 67
+    },
+    {
+     "atMs": 7.53,
+     "widthSamples": 1,
+     "counts": 62,
+     "peak": 62
+    },
+    {
+     "atMs": 7.606,
+     "widthSamples": 1,
+     "counts": 59,
+     "peak": 59
+    },
+    {
+     "atMs": 7.92,
+     "widthSamples": 1,
+     "counts": -50,
+     "peak": -50
+    },
+    {
+     "atMs": 8.13,
+     "widthSamples": 1,
+     "counts": 60,
+     "peak": 60
+    },
+    {
+     "atMs": 8.206,
+     "widthSamples": 1,
+     "counts": 58,
+     "peak": 58
+    },
+    {
+     "atMs": 8.288,
+     "widthSamples": 1,
+     "counts": 55,
+     "peak": 55
+    },
+    {
+     "atMs": 8.364,
+     "widthSamples": 1,
+     "counts": 58,
+     "peak": 58
+    },
+    {
+     "atMs": 8.446,
+     "widthSamples": 1,
+     "counts": 66,
+     "peak": 66
+    },
+    {
+     "atMs": 8.604,
+     "widthSamples": 1,
+     "counts": 60,
+     "peak": 60
+    },
+    {
+     "atMs": 8.686,
+     "widthSamples": 1,
+     "counts": 59,
+     "peak": 59
+    },
+    {
+     "atMs": 8.762,
+     "widthSamples": 1,
+     "counts": 60,
+     "peak": 60
+    },
+    {
+     "atMs": 8.844,
+     "widthSamples": 1,
+     "counts": 71,
+     "peak": 71
+    },
+    {
+     "atMs": 9.052,
+     "widthSamples": 1,
+     "counts": 66,
+     "peak": 66
+    },
+    {
+     "atMs": 9.134,
+     "widthSamples": 1,
+     "counts": 68,
+     "peak": 68
+    },
+    {
+     "atMs": 9.216,
+     "widthSamples": 1,
+     "counts": 59,
+     "peak": 59
+    },
+    {
+     "atMs": 9.292,
+     "widthSamples": 1,
+     "counts": 76,
+     "peak": 76
+    },
+    {
+     "atMs": 9.602,
+     "widthSamples": 1,
+     "counts": 60,
+     "peak": 60
+    },
+    {
+     "atMs": 9.684,
+     "widthSamples": 1,
+     "counts": 66,
+     "peak": 66
+    },
+    {
+     "atMs": 9.76,
+     "widthSamples": 1,
+     "counts": 62,
+     "peak": 62
+    },
+    {
+     "atMs": 9.842,
+     "widthSamples": 1,
+     "counts": 56,
+     "peak": 56
+    },
+    {
+     "atMs": 9.912,
+     "widthSamples": 1,
+     "counts": 48,
+     "peak": 48
+    },
+    {
+     "atMs": 10.202,
+     "widthSamples": 1,
+     "counts": 62,
+     "peak": 62
+    },
+    {
+     "atMs": 10.278,
+     "widthSamples": 1,
+     "counts": 50,
+     "peak": 50
+    },
+    {
+     "atMs": 10.43,
+     "widthSamples": 1,
+     "counts": 68,
+     "peak": 68
+    },
+    {
+     "atMs": 10.592,
+     "widthSamples": 1,
+     "counts": -64,
+     "peak": -64
+    },
+    {
+     "atMs": 10.664,
+     "widthSamples": 1,
+     "counts": 58,
+     "peak": 58
+    },
+    {
+     "atMs": 10.746,
+     "widthSamples": 1,
+     "counts": 66,
+     "peak": 66
+    },
+    {
+     "atMs": 10.822,
+     "widthSamples": 1,
+     "counts": 56,
+     "peak": 56
+    },
+    {
+     "atMs": 11.024,
+     "widthSamples": 1,
+     "counts": 54,
+     "peak": 54
+    },
+    {
+     "atMs": 11.334,
+     "widthSamples": 1,
+     "counts": 60,
+     "peak": 60
+    },
+    {
+     "atMs": 11.492,
+     "widthSamples": 1,
+     "counts": 76,
+     "peak": 76
+    },
+    {
+     "atMs": 11.568,
+     "widthSamples": 1,
+     "counts": 53,
+     "peak": 53
+    },
+    {
+     "atMs": 11.96,
+     "widthSamples": 1,
+     "counts": 56,
+     "peak": 56
+    },
+    {
+     "atMs": 11.992,
+     "widthSamples": 1,
+     "counts": 58,
+     "peak": 58
+    }
+   ],
+   "gridScan": {
+    "bestPeriodUs": 76.5,
+    "bestFrequencyKHz": 13.072,
+    "coherence": 0.557,
+    "shuffledNullAtLeastAsGood": "0 of 1000",
+    "spikes": 50
+   },
+   "signs": {
+    "positive": 46,
+    "negative": 4
+   }
+  }
+ ]
+}

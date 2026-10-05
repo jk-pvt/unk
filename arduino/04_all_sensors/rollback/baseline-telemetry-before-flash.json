@@ -1,0 +1,111 @@
+{
+ "capturedAt": "before-flash",
+ "current": {
+  "capabilities": {
+   "controlVersion": 1
+  },
+  "firmwareMode": "ADAPTIVE_TRANSMITTER",
+  "identity": {
+   "id": "AQUASDR_ADAPTIVE",
+   "version": "0.3.3",
+   "build": "dev",
+   "platform": "BARE_METAL",
+   "capabilities": [
+    "TIM6_DMA_DAC1_PA4",
+    "ADC_A0",
+    "WEB_CONTROL",
+    "LFM",
+    "GEOMETRIC",
+    "PHASE_CODED",
+    "WINDOWS"
+   ]
+  },
+  "adc": {
+   "pin": "PA0/A0",
+   "sensor": "DIAL",
+   "fullScaleCounts": 4095,
+   "raw": 0,
+   "millivolts": 0,
+   "filteredLevel": 0,
+   "valid": false,
+   "candidate": 255
+  },
+  "environment": {
+   "turbidityIndex": 0,
+   "depth": 0,
+   "temperature": 25,
+   "source": "ADC_DIAL",
+   "profile": "ADC_DIAL",
+   "valid": false,
+   "sampledMs": 0
+  },
+  "control": {
+   "session": 987430762,
+   "lastRequestId": 1,
+   "requestedId": 0,
+   "appliedRequestId": 0,
+   "decisionId": 0,
+   "appliedDecisionId": 0,
+   "outputEnabled": false,
+   "qualified": false,
+   "state": "INHIBITED",
+   "reason": "OUTPUT_DISABLED",
+   "profile": "UNQUALIFIED",
+   "decisionToOutputMs": 0,
+   "hasApplied": false,
+   "mode": 0,
+   "window": 1,
+   "uptimeMs": 496727
+  },
+  "sensors": {
+   "temperature": null,
+   "turbidity": null,
+   "pressure": null,
+   "depth": null,
+   "conductivity": null
+  },
+  "power": {
+   "voltage": null,
+   "current": null,
+   "watts": null,
+   "energy": null
+  },
+  "health": {
+   "STM32": "COMPUTED",
+   "TIMER": "COMPUTED",
+   "DMA": "COMPUTED",
+   "DAC": "COMPUTED",
+   "ADC": "COMPUTED",
+   "SENSORS": "COMPUTED",
+   "TX": "COMPUTED",
+   "RX": "COMPUTED"
+  },
+  "engine": {
+   "timerHz": 1000000,
+   "dmaBuffer": 0,
+   "cpuLoad": null,
+   "underruns": 0
+  },
+  "firmware": "aquasdr-fw 0.3.3 adaptive environment control",
+  "provenance": "COMPUTED_C_ENGINE",
+  "powerEstimate": {
+   "source": "estimate",
+   "voltage": 11.1,
+   "current": 0.105,
+   "watts": 1.1655,
+   "soc": null,
+   "energy": null,
+   "assumptions": "105 mA electronics \u00b7 10 pings/s \u00b7 hypothetical driver load"
+  },
+  "batteryScenario": {
+   "source": "scenario",
+   "soc": 0.821220584718188,
+   "voltage": 11.912532047080944,
+   "current": 0.10559250406243222,
+   "watts": 1.2578740885752486,
+   "energy": 0.16042785006618634,
+   "charging": false,
+   "assumptions": "82.4% starting charge \u00b7 selected load held over session time \u00b7 deterministic load ripple"
+  }
+ }
+}

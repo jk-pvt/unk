@@ -1,0 +1,383 @@
+{
+  "design": {
+    "topology": "DAC -> 2nd-order unity-gain Sallen-Key Butterworth LPF (U1A) -> AC couple -> x1.50 non-inverting stage (U1B) -> 100 ohm + DC block -> scope, or (JP1 on VBIAS) 1 k + 1.65 V bias + clamp -> Nucleo A5 MCU ADC tap",
+    "adc_tap": {
+      "vbias_v": 1.65,
+      "r10_ohm": 1000.0,
+      "safe_range_v": [
+        0.1,
+        3.2
+      ],
+      "clamp": "BAT54S to GND and 3V3"
+    },
+    "vcc_v": 5.0,
+    "vmid_v": 2.5,
+    "stage2_gain": 1.5,
+    "stage2_gain_db": 3.5218251811136247,
+    "R_sk_ohm": 4750.0,
+    "C1_farad": 6.8e-10,
+    "C2_farad": 3.3e-10,
+    "fc_hz": 70731.86278007497,
+    "q": 0.7177405625652734,
+    "f_minus3db_sim_hz": 72205.98827803625,
+    "passband_36_44k_gain_db_min": 3.03876133665197,
+    "passband_36_44k_gain_db_max": 3.316098935707778,
+    "iq_ma_estimate": 1.076,
+    "datasheet_gbw_hz": 10000000.0,
+    "datasheet_slew_v_per_us": 6.5
+  },
+  "response": [
+    {
+      "hz": 100,
+      "filter_out_db": -1.8422901967723198e-05,
+      "opamp_out_db": 3.5214446943502486,
+      "connector_db": 3.51165700576249,
+      "adc_in_db": 3.5116569947895253
+    },
+    {
+      "hz": 1000.0,
+      "filter_out_db": -1.8422901967723198e-05,
+      "opamp_out_db": 3.5214446943502486,
+      "connector_db": 3.51165700576249,
+      "adc_in_db": 3.5116569947895253
+    },
+    {
+      "hz": 10000.0,
+      "filter_out_db": 0.005004729596523311,
+      "opamp_out_db": 3.5266878433294195,
+      "connector_db": 3.517067182240043,
+      "adc_in_db": 3.517066076305398
+    },
+    {
+      "hz": 36000.0,
+      "filter_out_db": -0.20381687156596406,
+      "opamp_out_db": 3.31775099593482,
+      "connector_db": 3.3081292833240186,
+      "adc_in_db": 3.3081148767168207
+    },
+    {
+      "hz": 38000.0,
+      "filter_out_db": -0.2623135863385461,
+      "opamp_out_db": 3.2592393587646518,
+      "connector_db": 3.2496173010382785,
+      "adc_in_db": 3.2496011103849725
+    },
+    {
+      "hz": 40000.0,
+      "filter_out_db": -0.3307927888104193,
+      "opamp_out_db": 3.1907455243843956,
+      "connector_db": 3.1811231450740274,
+      "adc_in_db": 3.1811054408506365
+    },
+    {
+      "hz": 42000.0,
+      "filter_out_db": -0.4101340330852692,
+      "opamp_out_db": 3.1113885953880027,
+      "connector_db": 3.101765862793488,
+      "adc_in_db": 3.101746467752281
+    },
+    {
+      "hz": 44000.0,
+      "filter_out_db": -0.5010255476369484,
+      "opamp_out_db": 3.020479962781915,
+      "connector_db": 3.010856831056261,
+      "adc_in_db": 3.0108354404903475
+    },
+    {
+      "hz": 70731.86278007497,
+      "filter_out_db": -2.8818425099868157,
+      "opamp_out_db": 0.6393621396381843,
+      "connector_db": 0.6297319644754926,
+      "adc_in_db": 0.6296764907027748
+    },
+    {
+      "hz": 141463.72556014993,
+      "filter_out_db": -12.308502178675509,
+      "opamp_out_db": -8.788764754847255,
+      "connector_db": -8.798429478612375,
+      "adc_in_db": -8.798650043460794
+    },
+    {
+      "hz": 120000.0,
+      "filter_out_db": -9.6512601949532,
+      "opamp_out_db": -6.130975228609509,
+      "connector_db": -6.1406270624931665,
+      "adc_in_db": -6.140786245768815
+    },
+    {
+      "hz": 200000.0,
+      "filter_out_db": -18.171152051521258,
+      "opamp_out_db": -14.65336497656783,
+      "connector_db": -14.663075640950048,
+      "adc_in_db": -14.663515045344216
+    },
+    {
+      "hz": 956000.0,
+      "filter_out_db": -45.35885228748438,
+      "opamp_out_db": -41.92555620511398,
+      "connector_db": -41.93727296209322,
+      "adc_in_db": -41.94729255992734
+    },
+    {
+      "hz": 964000.0,
+      "filter_out_db": -45.50425210485535,
+      "opamp_out_db": -42.07242644668242,
+      "connector_db": -42.084178384929125,
+      "adc_in_db": -42.094366343339445
+    }
+  ],
+  "expected_profiles": {
+    "CLEAR/RECT": {
+      "dac_vpp": 1.153992673992674,
+      "opamp_vpp": 1.6660485020965357,
+      "headroom_v": 1.666975748951732,
+      "clips": false,
+      "adc_tap_min_v": 0.8184706139669757,
+      "adc_tap_max_v": 2.4820330744771906,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 65.2017349599811,
+      "filter_tap_min_v": 1.0950426018109023,
+      "filter_tap_max_v": 2.2054631233578252
+    },
+    "CLEAR/HANN": {
+      "dac_vpp": 1.153992673992674,
+      "opamp_vpp": 1.6460199056436824,
+      "headroom_v": 1.6769900471781587,
+      "clips": false,
+      "adc_tap_min_v": 0.829340853024181,
+      "adc_tap_max_v": 2.471983328559202,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 65.9989054706147,
+      "filter_tap_min_v": 1.1021329988730026,
+      "filter_tap_max_v": 2.19888547186643
+    },
+    "CLEAR/HAMMING": {
+      "dac_vpp": 1.153992673992674,
+      "opamp_vpp": 1.646542277817084,
+      "headroom_v": 1.676728861091458,
+      "clips": false,
+      "adc_tap_min_v": 0.8293338173753492,
+      "adc_tap_max_v": 2.472243075625502,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 65.97805637795196,
+      "filter_tap_min_v": 1.1021350346209788,
+      "filter_tap_max_v": 2.199061507552523
+    },
+    "CLEAR/BLACKMAN": {
+      "dac_vpp": 1.153992673992674,
+      "opamp_vpp": 1.6436381840380765,
+      "headroom_v": 1.6781809079809618,
+      "clips": false,
+      "adc_tap_min_v": 0.8298780998742912,
+      "adc_tap_max_v": 2.470881051547731,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 66.08752863489089,
+      "filter_tap_min_v": 1.1022222577293599,
+      "filter_tap_max_v": 2.1980922777425143
+    },
+    "TRANSITION/RECT": {
+      "dac_vpp": 1.6495970695970696,
+      "opamp_vpp": 2.392496760831256,
+      "headroom_v": 1.303751619584372,
+      "clips": false,
+      "adc_tap_min_v": 0.45651700180848276,
+      "adc_tap_max_v": 2.84492731963258,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 64.857501143944,
+      "filter_tap_min_v": 0.8535519155966715,
+      "filter_tap_max_v": 2.4474739843319924
+    },
+    "TRANSITION/HANN": {
+      "dac_vpp": 1.6455677655677654,
+      "opamp_vpp": 2.3765937924517835,
+      "headroom_v": 1.3117031037741083,
+      "clips": false,
+      "adc_tap_min_v": 0.46316279205801303,
+      "adc_tap_max_v": 2.8369632536678004,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 65.29266997989997,
+      "filter_tap_min_v": 0.8575355600095728,
+      "filter_tap_max_v": 2.441738509422862
+    },
+    "TRANSITION/HAMMING": {
+      "dac_vpp": 1.6455677655677654,
+      "opamp_vpp": 2.376589278093672,
+      "headroom_v": 1.311705360953164,
+      "clips": false,
+      "adc_tap_min_v": 0.46316487544032814,
+      "adc_tap_max_v": 2.836965262970689,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 65.29255945202317,
+      "filter_tap_min_v": 0.8575372323975974,
+      "filter_tap_max_v": 2.441740127523705
+    },
+    "TRANSITION/BLACKMAN": {
+      "dac_vpp": 1.6455677655677654,
+      "opamp_vpp": 2.376576938691528,
+      "headroom_v": 1.311711530654236,
+      "clips": false,
+      "adc_tap_min_v": 0.4631719708645061,
+      "adc_tap_max_v": 2.8369631368419435,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 65.29267640627658,
+      "filter_tap_min_v": 0.8575397799008178,
+      "filter_tap_max_v": 2.441738389598566
+    },
+    "MURKY/RECT": {
+      "dac_vpp": 2.045274725274725,
+      "opamp_vpp": 2.9835853556878016,
+      "headroom_v": 1.0082073221560992,
+      "clips": false,
+      "adc_tap_min_v": 0.16138735868162835,
+      "adc_tap_max_v": 3.1400703212681536,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 64.49360048874219,
+      "filter_tap_min_v": 0.656437062844149,
+      "filter_tap_max_v": 2.6446374971877127
+    },
+    "MURKY/HANN": {
+      "dac_vpp": 2.045274725274725,
+      "opamp_vpp": 2.9782084587588957,
+      "headroom_v": 1.0108957706205521,
+      "clips": false,
+      "adc_tap_min_v": 0.1644288152806599,
+      "adc_tap_max_v": 3.137432301929838,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 64.60798241057229,
+      "filter_tap_min_v": 0.658582794504929,
+      "filter_tap_max_v": 2.6427832431061535
+    },
+    "MURKY/HAMMING": {
+      "dac_vpp": 2.045274725274725,
+      "opamp_vpp": 2.9782125612740202,
+      "headroom_v": 1.0108937193629899,
+      "clips": false,
+      "adc_tap_min_v": 0.16441782750877643,
+      "adc_tap_max_v": 3.137434218591588,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 64.60789915872348,
+      "filter_tap_min_v": 0.6585835732606451,
+      "filter_tap_max_v": 2.6427846676895967
+    },
+    "MURKY/BLACKMAN": {
+      "dac_vpp": 2.0436630036630037,
+      "opamp_vpp": 2.9782073863698946,
+      "headroom_v": 1.0108963068150527,
+      "clips": false,
+      "adc_tap_min_v": 0.16442991754765135,
+      "adc_tap_max_v": 3.1374317059142727,
+      "adc_tap_safe": true,
+      "adc_tap_max_amplitude_pct": 64.60800829906384,
+      "filter_tap_min_v": 0.6587499890232683,
+      "filter_tap_max_v": 2.642782967207708
+    }
+  },
+  "gain_by_khz": {
+    "30": {
+      "filter_out": 0.9907141096287594,
+      "opamp_out": 1.4860338427804634,
+      "adc_in": 1.4843870753529287
+    },
+    "31": {
+      "filter_out": 0.9889378780702512,
+      "opamp_out": 1.4833685474233307,
+      "adc_in": 1.4817245977144955
+    },
+    "32": {
+      "filter_out": 0.9869574807373799,
+      "opamp_out": 1.4803969811980187,
+      "adc_in": 1.4787561843669508
+    },
+    "33": {
+      "filter_out": 0.9847662829886338,
+      "opamp_out": 1.4771091939380654,
+      "adc_in": 1.475471896404236
+    },
+    "34": {
+      "filter_out": 0.9823524415244679,
+      "opamp_out": 1.4734874219563734,
+      "adc_in": 1.4718539899512952
+    },
+    "35": {
+      "filter_out": 0.9797047299059584,
+      "opamp_out": 1.4695148269927631,
+      "adc_in": 1.4678856455541998
+    },
+    "36": {
+      "filter_out": 0.9768127861812805,
+      "opamp_out": 1.4651758676442748,
+      "adc_in": 1.4635513391990427
+    },
+    "37": {
+      "filter_out": 0.973667375504804,
+      "opamp_out": 1.4604566932787135,
+      "adc_in": 1.4588372357884603
+    },
+    "38": {
+      "filter_out": 0.9702606582742574,
+      "opamp_out": 1.4553455462188447,
+      "adc_in": 1.4537315908787538
+    },
+    "39": {
+      "filter_out": 0.9665864505261281,
+      "opamp_out": 1.4498331523067955,
+      "adc_in": 1.4482251408090816
+    },
+    "40": {
+      "filter_out": 0.9626360560892553,
+      "opamp_out": 1.4439064689821501,
+      "adc_in": 1.4423048576647681
+    },
+    "41": {
+      "filter_out": 0.9583978552062686,
+      "opamp_out": 1.4375480683366393,
+      "adc_in": 1.4359533330307919
+    },
+    "42": {
+      "filter_out": 0.9538800493935942,
+      "opamp_out": 1.4307702547851149,
+      "adc_in": 1.4291828580278068
+    },
+    "43": {
+      "filter_out": 0.9490594075998717,
+      "opamp_out": 1.4235381833614447,
+      "adc_in": 1.4219586264043629
+    },
+    "44": {
+      "filter_out": 0.943953279720875,
+      "opamp_out": 1.4158778810321027,
+      "adc_in": 1.4143066366701076
+    },
+    "45": {
+      "filter_out": 0.938542393251015,
+      "opamp_out": 1.4077604409004885,
+      "adc_in": 1.4061980141168853
+    },
+    "46": {
+      "filter_out": 0.9328358103831219,
+      "opamp_out": 1.3991994581914944,
+      "adc_in": 1.3976463392181526
+    },
+    "47": {
+      "filter_out": 0.9268366360263959,
+      "opamp_out": 1.3901995921056158,
+      "adc_in": 1.388656266279894
+    },
+    "48": {
+      "filter_out": 0.9205410424332344,
+      "opamp_out": 1.3807551029802085,
+      "adc_in": 1.379222062248229
+    },
+    "49": {
+      "filter_out": 0.9139478181018089,
+      "opamp_out": 1.370864175582804,
+      "adc_in": 1.369341914172344
+    },
+    "50": {
+      "filter_out": 0.9070691323590241,
+      "opamp_out": 1.3605450655275253,
+      "adc_in": 1.3590340577222206
+    }
+  },
+  "fc_rationale": "FC is chosen, not assumed: <1 dB droop through the 44 kHz top of the CLEAR sweep, >=9 dB at the 3rd harmonic (120 kHz) and >=45 dB at the 1 MS/s DAC image (956 kHz)."
+}

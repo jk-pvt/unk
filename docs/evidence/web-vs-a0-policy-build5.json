@@ -1,0 +1,150 @@
+{
+ "build": "build 5 482ebd4c…19c9",
+ "outputEnabledAnyTime": false,
+ "web": [
+  {
+   "command": "SET_ENV MUDDY_ESTUARY",
+   "ack": "ACCEPTED",
+   "ackMs": 16,
+   "environment": {
+    "source": "WEB_COMMAND",
+    "profile": "MUDDY_ESTUARY",
+    "index": 85,
+    "depth": 18,
+    "temp": 24.8
+   },
+   "qualified": true,
+   "policy": "MURKY",
+   "requested": "LFM CHIRP 38 kHz / 1 kHz / 8 ms / 62 % / HANN",
+   "expected": "LFM CHIRP 38 kHz / 1 kHz / 8 ms / 62 % / HANN",
+   "applied": null,
+   "state": "INHIBITED",
+   "outputEnabled": false,
+   "match": true
+  },
+  {
+   "command": "SET_ENV CLEAR_SHALLOW_REEF",
+   "ack": "ACCEPTED",
+   "ackMs": 16,
+   "environment": {
+    "source": "WEB_COMMAND",
+    "profile": "CLEAR_SHALLOW_REEF",
+    "index": 12,
+    "depth": 3,
+    "temp": 26
+   },
+   "qualified": true,
+   "policy": "CLEAR",
+   "requested": "LFM CHIRP 42 kHz / 4 kHz / 2 ms / 35 % / HANN",
+   "expected": "LFM CHIRP 42 kHz / 4 kHz / 2 ms / 35 % / HANN",
+   "applied": null,
+   "state": "INHIBITED",
+   "outputEnabled": false,
+   "match": true
+  },
+  {
+   "command": "SET_ENV DEEP_OPEN_WATER",
+   "ack": "ACCEPTED",
+   "ackMs": 41,
+   "environment": {
+    "source": "WEB_COMMAND",
+    "profile": "DEEP_OPEN_WATER",
+    "index": 10,
+    "depth": 80,
+    "temp": 10
+   },
+   "qualified": true,
+   "policy": "MURKY",
+   "requested": "LFM CHIRP 38 kHz / 1 kHz / 8 ms / 62 % / HANN",
+   "expected": "LFM CHIRP 38 kHz / 1 kHz / 8 ms / 62 % / HANN",
+   "applied": null,
+   "state": "INHIBITED",
+   "outputEnabled": false,
+   "match": true
+  },
+  {
+   "command": "SET_ENV SEDIMENT_PLUME",
+   "ack": "ACCEPTED",
+   "ackMs": 20,
+   "environment": {
+    "source": "WEB_COMMAND",
+    "profile": "SEDIMENT_PLUME",
+    "index": 95,
+    "depth": 12,
+    "temp": 22
+   },
+   "qualified": true,
+   "policy": "MURKY",
+   "requested": "LFM CHIRP 38 kHz / 1 kHz / 8 ms / 62 % / HANN",
+   "expected": "LFM CHIRP 38 kHz / 1 kHz / 8 ms / 62 % / HANN",
+   "applied": null,
+   "state": "INHIBITED",
+   "outputEnabled": false,
+   "match": true
+  },
+  {
+   "command": "SET_ENV CLEAR_SHALLOW_REEF",
+   "ack": "ACCEPTED",
+   "ackMs": 16,
+   "environment": {
+    "source": "WEB_COMMAND",
+    "profile": "CLEAR_SHALLOW_REEF",
+    "index": 12,
+    "depth": 3,
+    "temp": 26
+   },
+   "qualified": true,
+   "policy": "CLEAR",
+   "requested": "LFM CHIRP 42 kHz / 4 kHz / 2 ms / 35 % / HANN",
+   "expected": "LFM CHIRP 42 kHz / 4 kHz / 2 ms / 35 % / HANN",
+   "applied": null,
+   "state": "INHIBITED",
+   "outputEnabled": false,
+   "match": true
+  }
+ ],
+ "policyTable": {
+  "CLEAR": "LFM CHIRP 42 kHz / 4 kHz / 2 ms / 35 % / HANN",
+  "TRANSITION": "LFM CHIRP 40 kHz / 2 kHz / 4 ms / 50 % / HANN",
+  "MURKY": "LFM CHIRP 38 kHz / 1 kHz / 8 ms / 62 % / HANN"
+ },
+ "sourceWebAck": "ACCEPTED",
+ "a0": {
+  "source": "ADC_DIAL",
+  "adc": {
+   "raw": 24,
+   "millivolts": 19,
+   "filteredLevel": 1,
+   "valid": true,
+   "sensor": "TDS_PROXY",
+   "fullScaleCounts": 2854
+  },
+  "envIndex": 0.8,
+  "qualified": true,
+  "policy": "CLEAR",
+  "requested": "LFM CHIRP 42 kHz / 4 kHz / 2 ms / 35 % / HANN"
+ },
+ "equivalence": {
+  "webValues": {
+   "turbidityIndex": 0.8,
+   "depth": 0,
+   "temperature": 25
+  },
+  "webAck": "ACCEPTED",
+  "webEnvProfile": "CUSTOM",
+  "webPolicy": "CLEAR",
+  "webRequested": "LFM CHIRP 42 kHz / 4 kHz / 2 ms / 35 % / HANN",
+  "a0Policy": "CLEAR",
+  "a0Requested": "LFM CHIRP 42 kHz / 4 kHz / 2 ms / 35 % / HANN",
+  "identical": true
+ },
+ "final": {
+  "source": "ADC_DIAL",
+  "outputEnabled": false,
+  "UART": "RX 44711 B 613 LINES 0 INVALID",
+  "DAC": "INHIBITED MID SCALE",
+  "DMA": "INHIBITED",
+  "TIMER": "INHIBITED TIM6 1.000 MHz",
+  "underruns": 0
+ }
+}

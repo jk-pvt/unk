@@ -1,0 +1,498 @@
+[
+  {
+    "id": "housing",
+    "label": "Acrylic tube",
+    "tabLabel": "Housing",
+    "base": [
+      0,
+      0,
+      0
+    ],
+    "explode": [
+      0,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "front-cap",
+    "label": "Left acrylic end plate",
+    "tabLabel": "Left cap",
+    "base": [
+      -11.875,
+      0,
+      0
+    ],
+    "explode": [
+      -5.46875,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "rear-cap",
+    "label": "Probe end plate",
+    "tabLabel": "Probe cap",
+    "base": [
+      11.875,
+      0,
+      0
+    ],
+    "explode": [
+      6.25,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "frame",
+    "label": "Acrylic bulkheads and trays",
+    "tabLabel": "Frame",
+    "base": [
+      0,
+      0,
+      0
+    ],
+    "explode": [
+      0,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "power-tray",
+    "label": "Left power tray",
+    "tabLabel": null,
+    "base": [
+      -6.75,
+      -1.90625,
+      0
+    ],
+    "explode": [
+      -3.125,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "rods",
+    "label": "Display support rods",
+    "tabLabel": "Rods",
+    "base": [
+      8.6875,
+      0,
+      0
+    ],
+    "explode": [
+      3.28125,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "battery",
+    "label": "Visible Li-ion cells",
+    "tabLabel": "Li-ion cells",
+    "base": [
+      -3.4375,
+      -1.34375,
+      1.53125
+    ],
+    "explode": [
+      -3.125,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "aux-battery",
+    "label": "Orange battery pack",
+    "tabLabel": "Orange pack",
+    "base": [
+      -5.25,
+      -0.53125,
+      -0.1875
+    ],
+    "explode": [
+      -3.125,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "controller-board",
+    "label": "Left controller board",
+    "tabLabel": "Controller",
+    "base": [
+      -7.96875,
+      -0.875,
+      0.78125
+    ],
+    "explode": [
+      -3.125,
+      0,
+      0
+    ],
+    "note": "UNO-style form visible in photos; exact identity unverified"
+  },
+  {
+    "id": "power-module",
+    "label": "Terminal power board",
+    "tabLabel": "Power board",
+    "base": [
+      -9.375,
+      -0.6875,
+      -1.15625
+    ],
+    "explode": [
+      -3.125,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "heatsink",
+    "label": "Finned power module",
+    "tabLabel": "Heatsink",
+    "base": [
+      -10.125,
+      -1.53125,
+      1.53125
+    ],
+    "explode": [
+      -3.125,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "identity",
+    "label": "Flag and AquaSDR label",
+    "tabLabel": null,
+    "base": [
+      -8.125,
+      0.75,
+      1.75
+    ],
+    "explode": [
+      -3.125,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "stm32",
+    "label": "NUCLEO-F446RE",
+    "tabLabel": "Nucleo",
+    "base": [
+      2.125,
+      0.125,
+      -0.625
+    ],
+    "explode": [
+      0,
+      0,
+      0
+    ],
+    "note": "Board outline from inventory; photo-obscured placement estimated"
+  },
+  {
+    "id": "compute-module",
+    "label": "Cooled electronics board",
+    "tabLabel": "Cooled board",
+    "base": [
+      -0.8125,
+      0.0625,
+      -0.40625
+    ],
+    "explode": [
+      0,
+      0,
+      0
+    ],
+    "note": "Fan/cooled board visible; processor identity not asserted"
+  },
+  {
+    "id": "display",
+    "label": "ST7735 TFT",
+    "tabLabel": "ST7735 TFT",
+    "base": [
+      -0.28125,
+      0.46875,
+      1.78125
+    ],
+    "explode": [
+      0,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "sensor-modules",
+    "label": "Sensor interface boards",
+    "tabLabel": "Sensor boards",
+    "base": [
+      3,
+      -0.0625,
+      1.375
+    ],
+    "explode": [
+      0,
+      0,
+      0
+    ],
+    "note": "Visible breakout form factors; individual IC identity obscured"
+  },
+  {
+    "id": "daughterboard",
+    "label": "Hanging daughterboard",
+    "tabLabel": null,
+    "base": [
+      -0.96875,
+      -1.5625,
+      1.59375
+    ],
+    "explode": [
+      0,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "instrument-case",
+    "label": "Lower electronics enclosure",
+    "tabLabel": null,
+    "base": [
+      1.78125,
+      -1.1875,
+      -0.09375
+    ],
+    "explode": [
+      0,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "large-display",
+    "label": "Large display",
+    "tabLabel": "Large display",
+    "base": [
+      8.59375,
+      0.625,
+      1.3125
+    ],
+    "explode": [
+      3.28125,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "wrapped-module",
+    "label": "Blue wrapped module",
+    "tabLabel": "Wrapped module",
+    "base": [
+      9.25,
+      -1.34375,
+      0.84375
+    ],
+    "explode": [
+      3.28125,
+      0,
+      0
+    ],
+    "note": "Shape visible below screen; contents unknown"
+  },
+  {
+    "id": "cable-coil",
+    "label": "Cable coil",
+    "tabLabel": null,
+    "base": [
+      7.875,
+      -1.40625,
+      -0.5
+    ],
+    "explode": [
+      3.28125,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "hc-sr04",
+    "label": "End-plate ultrasonic module",
+    "tabLabel": "Ultrasonic",
+    "base": [
+      11.65625,
+      0.03125,
+      -0.96875
+    ],
+    "explode": [
+      6.25,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "tds",
+    "label": "White conductivity probe",
+    "tabLabel": "TDS",
+    "base": [
+      12.15625,
+      0.6875,
+      0.125
+    ],
+    "explode": [
+      6.25,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "ds18b20",
+    "label": "Stainless temperature probe",
+    "tabLabel": "DS18B20",
+    "base": [
+      12.46875,
+      0,
+      0.125
+    ],
+    "explode": [
+      6.25,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "turbidity",
+    "label": "Translucent optical probe",
+    "tabLabel": "Turbidity",
+    "base": [
+      12.15625,
+      -1.375,
+      0.9375
+    ],
+    "explode": [
+      6.25,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "pressure",
+    "label": "Threaded water-pressure sensor",
+    "tabLabel": "Water pressure",
+    "base": [
+      12.25,
+      -1.9375,
+      -0.5625
+    ],
+    "explode": [
+      6.25,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "switch",
+    "label": "Power rocker switch",
+    "tabLabel": "Switch",
+    "base": [
+      12.03125,
+      1.34375,
+      -0.9375
+    ],
+    "explode": [
+      6.25,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "tether",
+    "label": "USB tether and plate port",
+    "tabLabel": null,
+    "base": [
+      12.03125,
+      -0.78125,
+      -1.5
+    ],
+    "explode": [
+      6.25,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "wiring",
+    "label": "Central wiring harness",
+    "tabLabel": "Wiring",
+    "base": [
+      0.9375,
+      0.625,
+      0
+    ],
+    "explode": [
+      0,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "probe-wiring",
+    "label": "Probe wiring",
+    "tabLabel": null,
+    "base": [
+      9.375,
+      0,
+      -1.09375
+    ],
+    "explode": [
+      3.28125,
+      0,
+      0
+    ],
+    "note": ""
+  },
+  {
+    "id": "power-wiring",
+    "label": "Power wiring",
+    "tabLabel": null,
+    "base": [
+      -7.65625,
+      -0.6875,
+      0
+    ],
+    "explode": [
+      -3.125,
+      0,
+      0
+    ],
+    "note": ""
+  }
+]

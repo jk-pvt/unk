@@ -1,0 +1,31 @@
+ref,value,qty_note,type,notes
+R1,4.75kohm,1,resistor,SK input resistor
+R2,4.75kohm,1,resistor,SK second resistor
+C1,680pF,1,capacitor,SK feedback capacitor (node A to FILTER_OUT) C0G
+C2,330pF,1,capacitor,SK shunt capacitor (+ input to GND) C0G
+C3,1uF,1,capacitor,Stage-2 input DC block, film or X7R
+R3,100kohm,1,resistor,Stage-2 bias divider, top (VCC)
+R4,100kohm,1,resistor,Stage-2 bias divider, bottom (GND)
+C4,100nF,1,capacitor,VMID decoupling (on the divider node, isolated from the signal by R9)
+R9,100kohm,1,resistor,Bias isolation: VMID to the U1B + input
+R5,10kohm,1,resistor,Stage-2 feedback Rf
+R6,20kohm,1,resistor,Stage-2 gain-set Rg
+C5,10uF,1,capacitor,Rg DC-block (DC gain 1), + toward U1 pin 6
+R7,100ohm,1,resistor,Output series resistor / cable isolation
+C6,1uF,1,capacitor,Output DC block, film or X7R
+R8,100kohm,1,resistor,Output bleed to SCOPE_REF (JP1: GND for a scope, VBIAS for the MCU ADC tap)
+R10,1kohm,1,resistor,MCU ADC tap: series resistor into the ADC pin (with D1 limits fault current)
+R11,10kohm,1,resistor,MCU ADC tap: VBIAS divider, top (Nucleo 3V3)
+R12,10kohm,1,resistor,MCU ADC tap: VBIAS divider, bottom (GND)
+C9,100nF,1,capacitor,MCU ADC tap: VBIAS decoupling
+C7,100nF,1,capacitor,U1 supply decoupling at pins 8/4
+C8,10uF,1,capacitor,U1 bulk supply decoupling
+U1,TLV9062 (dual op-amp; non-shutdown),1,IC,On SOIC-8 adapter. Pins: 1 OUTA 2 -INA 3 +INA 4 V- 5 +INB 6 -INB 7 OUTB 8 V+
+J1,Header 1x02,1,connector,DAC_PA4 + GND from Nucleo A2 and GND
+J2,Header 1x02,1,connector,+5V (Nucleo CN6 pin 5V) + GND
+J3,BNC or header 1x02,1,connector,SCOPE_OUT + GND to oscilloscope probe
+J4,Header 1x02,1,connector,ADC_IN to Nucleo A5 (PC0) + GND: MCU ADC tap
+J5,Header 1x02,1,connector,Nucleo 3V3 + GND: VBIAS source for the MCU ADC tap
+D1,BAT54S dual Schottky (SOT-23),1,diode,Clamps ADC_IN to GND / 3V3 (catches any excursion outside the ADC range)
+JP1,Header 1x03 + jumper,1,jumper,SCOPE_REF: pin 1-2 = GND (oscilloscope use); pin 2-3 = VBIAS (MCU ADC tap)
+TP1-TP4,Test point,4,test point,DAC_PA4 / FILTER_OUT / OPAMP_OUT / GND

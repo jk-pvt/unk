@@ -1,0 +1,186 @@
+{
+ "when": "2026-10-02T04:47:02.680Z",
+ "firmware": "AquaSDR sensors + adaptive TX 0.4.0",
+ "start": {
+  "bytes": 53,
+  "lines": 1,
+  "invalid": 0
+ },
+ "end": {
+  "bytes": 8788,
+  "lines": 122,
+  "invalid": 8
+ },
+ "outputEverEnabled": false,
+ "totals": {
+  "sent": 66,
+  "accepted": 48,
+  "rejected": 3,
+  "lost": 15,
+  "blocked": 0
+ },
+ "deviceTotals": {
+  "bytes": 8735,
+  "lines": 121,
+  "invalid": 8
+ },
+ "phases": [
+  {
+   "phase": "back-to-back",
+   "gapMs": 0,
+   "sent": 24,
+   "accepted": 15,
+   "rejected": 3,
+   "rejectedWhy": [
+    "SOURCE_NOT_WEB"
+   ],
+   "lost": 6,
+   "blocked": 0,
+   "deviceDelta": {
+    "bytes": 1990,
+    "lines": 24,
+    "invalid": 3
+   },
+   "bridgeKeepalivesAndHandshakeLines": 0,
+   "latencyMs": {
+    "median": 16,
+    "p95": 181,
+    "max": 181,
+    "n": 18
+   },
+   "uptimeBefore": 79786,
+   "uptimeAfter": 103222,
+   "deviceReset": false,
+   "lostDetail": [
+    "source WEB_COMMAND",
+    "SET_ENV CLEAR",
+    "SET_ENV MUDDY",
+    "PING",
+    "source ADC_DIAL",
+    "source WEB_COMMAND"
+   ]
+  },
+  {
+   "phase": "100 ms spacing",
+   "gapMs": 100,
+   "sent": 16,
+   "accepted": 12,
+   "rejected": 0,
+   "rejectedWhy": [],
+   "lost": 4,
+   "blocked": 0,
+   "deviceDelta": {
+    "bytes": 1600,
+    "lines": 21,
+    "invalid": 2
+   },
+   "bridgeKeepalivesAndHandshakeLines": 5,
+   "latencyMs": {
+    "median": 16,
+    "p95": 80,
+    "max": 80,
+    "n": 12
+   },
+   "uptimeBefore": 104382,
+   "uptimeAfter": 119232,
+   "deviceReset": false,
+   "lostDetail": [
+    "SET_ENV_VALUES",
+    "STOP",
+    "SET_ENV SEDIMENT",
+    "SET_ENV DEEP"
+   ]
+  },
+  {
+   "phase": "500 ms spacing",
+   "gapMs": 500,
+   "sent": 12,
+   "accepted": 12,
+   "rejected": 0,
+   "rejectedWhy": [],
+   "lost": 0,
+   "blocked": 0,
+   "deviceDelta": {
+    "bytes": 1566,
+    "lines": 22,
+    "invalid": 0
+   },
+   "bridgeKeepalivesAndHandshakeLines": 10,
+   "latencyMs": {
+    "median": 16,
+    "p95": 129,
+    "max": 129,
+    "n": 12
+   },
+   "uptimeBefore": 120460,
+   "uptimeAfter": 127189,
+   "deviceReset": false,
+   "lostDetail": []
+  },
+  {
+   "phase": "1 s idle gaps",
+   "gapMs": 1000,
+   "sent": 8,
+   "accepted": 6,
+   "rejected": 0,
+   "rejectedWhy": [],
+   "lost": 2,
+   "blocked": 0,
+   "deviceDelta": {
+    "bytes": 1612,
+    "lines": 24,
+    "invalid": 1
+   },
+   "bridgeKeepalivesAndHandshakeLines": 16,
+   "latencyMs": {
+    "median": 16,
+    "p95": 148,
+    "max": 148,
+    "n": 6
+   },
+   "uptimeBefore": 128819,
+   "uptimeAfter": 143879,
+   "deviceReset": false,
+   "lostDetail": [
+    "SET_ENV CLEAR",
+    "GET_STATUS"
+   ]
+  },
+  {
+   "phase": "2 s idle gaps",
+   "gapMs": 2000,
+   "sent": 6,
+   "accepted": 3,
+   "rejected": 0,
+   "rejectedWhy": [],
+   "lost": 3,
+   "blocked": 0,
+   "deviceDelta": {
+    "bytes": 1375,
+    "lines": 20,
+    "invalid": 2
+   },
+   "bridgeKeepalivesAndHandshakeLines": 14,
+   "latencyMs": {
+    "median": 16,
+    "p95": 170,
+    "max": 170,
+    "n": 3
+   },
+   "uptimeBefore": 144904,
+   "uptimeAfter": 161944,
+   "deviceReset": false,
+   "lostDetail": [
+    "SET_ENV CLEAR",
+    "GET_STATUS",
+    "SET_ENV_VALUES"
+   ]
+  }
+ ],
+ "healthAfter": {
+  "UART": "RX 8788 B 122 LINES 8 INVALID",
+  "DAC": "INHIBITED MID SCALE",
+  "DMA": "INHIBITED",
+  "TIMER": "INHIBITED TIM6 1.000 MHz"
+ }
+}

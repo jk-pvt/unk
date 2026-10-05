@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 580" width="1760" height="580">
+<rect width="1760" height="580" fill="#ffffff"/>
+<text x="24" y="30" font-size="17" fill="#1b2230" text-anchor="start" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">AquaSDR analog front end · PA4 → 2nd-order Sallen-Key LPF → gain ×1.5 → scope</text>
+<text x="24" y="50" font-size="12" fill="#475569" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">Butterworth fc ≈ 70.7 kHz (Q 0.72) · supply 5 V single · TLV9062 dual (U1A filter, U1B gain) · COMPUTED DESIGN, NOT A MEASUREMENT</text>
+<g transform="translate(0,60)">
+<circle cx="70" cy="170" r="6" fill="#fff7ed" stroke="#b45309" stroke-width="2"/>
+<text x="70" y="158" font-size="12" fill="#b45309" text-anchor="middle" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">TP1</text>
+<text x="70" y="148" font-size="1" fill="#1b2230" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace"></text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="40,170 130,170"/>
+<text x="24" y="190" font-size="11" fill="#0b6e4f" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">J1.1</text>
+<text x="100" y="195" font-size="12" fill="#0b6e4f" text-anchor="middle" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">DAC_PA4</text>
+<circle cx="70" cy="170" r="3.5" fill="#1b2230"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="130,170 140,170"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="200,170 210,170"/>
+<rect x="140" y="161" width="60" height="18" fill="none" stroke="#1b2230" stroke-width="2"/>
+<text x="170" y="155" font-size="13" fill="#1b2230" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">R1 4.75kΩ</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="210,170 300,170"/>
+<circle cx="300" cy="170" r="3.5" fill="#1b2230"/>
+<text x="300" y="195" font-size="12" fill="#0b6e4f" text-anchor="middle" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">SK_A</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="305,170 315,170"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="375,170 385,170"/>
+<rect x="315" y="161" width="60" height="18" fill="none" stroke="#1b2230" stroke-width="2"/>
+<text x="345" y="155" font-size="13" fill="#1b2230" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">R2 4.75kΩ</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="385,170 440,170"/>
+<circle cx="440" cy="170" r="3.5" fill="#1b2230"/>
+<text x="430" y="195" font-size="12" fill="#0b6e4f" text-anchor="end" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">SK_P</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="440,180 440,214"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="440,226 440,260"/>
+<line x1="424" y1="214" x2="456" y2="214" stroke="#1b2230" stroke-width="3"/><line x1="424" y1="226" x2="456" y2="226" stroke="#1b2230" stroke-width="3"/>
+<text x="416" y="224" font-size="13" fill="#1b2230" text-anchor="end" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">C2 330pF</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="440,170 440,180"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="440,260 440,266"/>
+<line x1="426" y1="266" x2="454" y2="266" stroke="#1b2230" stroke-width="2"/>
+<line x1="431" y1="271" x2="449" y2="271" stroke="#1b2230" stroke-width="2"/>
+<line x1="436" y1="276" x2="444" y2="276" stroke="#1b2230" stroke-width="2"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="440,170 500,170"/>
+<polygon points="500,147 500,223 600,185" fill="#f8fafc" stroke="#1b2230" stroke-width="2"/>
+<text x="511" y="174" font-size="16" fill="#1b2230" text-anchor="middle" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">+</text>
+<text x="511" y="206" font-size="16" fill="#1b2230" text-anchor="middle" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">−</text>
+<text x="540" y="189" font-size="13" fill="#1b2230" text-anchor="middle" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">U1A</text>
+<text x="540" y="205" font-size="10" fill="#64748b" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">1,2,3</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="600,185 620,185"/>
+<circle cx="620" cy="185" r="3.5" fill="#1b2230"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="620,185 620,240 480,240 480,200 500,200"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="300,170 300,105"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="420,105 454,105"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="466,105 500,105"/>
+<line x1="454" y1="89" x2="454" y2="121" stroke="#1b2230" stroke-width="3"/><line x1="466" y1="89" x2="466" y2="121" stroke="#1b2230" stroke-width="3"/>
+<text x="460" y="81" font-size="13" fill="#1b2230" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">C1 680pF</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="300,105 420,105"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="500,105 620,105 620,185"/>
+<text x="632" y="212" font-size="12" fill="#0b6e4f" text-anchor="start" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">FILTER_OUT</text>
+<circle cx="620" cy="185" r="6" fill="#fff7ed" stroke="#b45309" stroke-width="2"/>
+<text x="620" y="173" font-size="12" fill="#b45309" text-anchor="middle" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">TP2</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="620,185 640,185"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="640,185 674,185"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="686,185 720,185"/>
+<line x1="674" y1="169" x2="674" y2="201" stroke="#1b2230" stroke-width="3"/><line x1="686" y1="169" x2="686" y2="201" stroke="#1b2230" stroke-width="3"/>
+<text x="680" y="161" font-size="13" fill="#1b2230" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">C3 1uF</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="720,185 780,185"/>
+<circle cx="780" cy="185" r="3.5" fill="#1b2230"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="780,185 780,200 840,200"/>
+<text x="765" y="175" font-size="12" fill="#0b6e4f" text-anchor="end" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">B_IN</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="780,210 780,220"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="780,280 780,290"/>
+<rect x="771" y="220" width="18" height="60" fill="none" stroke="#1b2230" stroke-width="2"/>
+<text x="764" y="254" font-size="13" fill="#1b2230" text-anchor="end" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">R9 100kΩ</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="780,280 780,292"/>
+<text x="780" y="308" font-size="12" fill="#0b6e4f" text-anchor="middle" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">VMID</text>
+<polygon points="840,147 840,223 940,185" fill="#f8fafc" stroke="#1b2230" stroke-width="2"/>
+<text x="851" y="174" font-size="16" fill="#1b2230" text-anchor="middle" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">−</text>
+<text x="851" y="206" font-size="16" fill="#1b2230" text-anchor="middle" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">+</text>
+<text x="880" y="189" font-size="13" fill="#1b2230" text-anchor="middle" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">U1B</text>
+<text x="880" y="205" font-size="10" fill="#64748b" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">5,6,7</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="940,185 975,185"/>
+<circle cx="960" cy="185" r="3.5" fill="#1b2230"/>
+<circle cx="960" cy="185" r="6" fill="#fff7ed" stroke="#b45309" stroke-width="2"/>
+<text x="960" y="173" font-size="12" fill="#b45309" text-anchor="middle" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">TP3</text>
+<text x="968" y="212" font-size="12" fill="#0b6e4f" text-anchor="start" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">OPAMP_OUT</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="960,185 960,95 830,95 830,170 840,170"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="855,95 865,95"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="925,95 935,95"/>
+<rect x="865" y="86" width="60" height="18" fill="none" stroke="#1b2230" stroke-width="2"/>
+<text x="895" y="80" font-size="13" fill="#1b2230" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">R5 10kΩ</text>
+<circle cx="830" cy="135" r="3.5" fill="#1b2230"/>
+<text x="852" y="135" font-size="12" fill="#0b6e4f" text-anchor="start" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">FB</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="830,135 800,135"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="720,135 730,135"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="790,135 800,135"/>
+<rect x="730" y="126" width="60" height="18" fill="none" stroke="#1b2230" stroke-width="2"/>
+<text x="760" y="120" font-size="13" fill="#1b2230" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">R6 20kΩ</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="720,135 710,135 710,100"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="710,30 710,64"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="710,76 710,110"/>
+<line x1="694" y1="64" x2="726" y2="64" stroke="#1b2230" stroke-width="3"/><line x1="694" y1="76" x2="726" y2="76" stroke="#1b2230" stroke-width="3"/>
+<text x="686" y="74" font-size="13" fill="#1b2230" text-anchor="end" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">C5 10uF</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="710,18 710,24"/>
+<line x1="696" y1="24" x2="724" y2="24" stroke="#1b2230" stroke-width="2"/>
+<line x1="701" y1="29" x2="719" y2="29" stroke="#1b2230" stroke-width="2"/>
+<line x1="706" y1="34" x2="714" y2="34" stroke="#1b2230" stroke-width="2"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="970,185 980,185"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1040,185 1050,185"/>
+<rect x="980" y="176" width="60" height="18" fill="none" stroke="#1b2230" stroke-width="2"/>
+<text x="1010" y="170" font-size="13" fill="#1b2230" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">R7 100Ω</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1050,185 1080,185"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1080,185 1114,185"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1126,185 1160,185"/>
+<line x1="1114" y1="169" x2="1114" y2="201" stroke="#1b2230" stroke-width="3"/><line x1="1126" y1="169" x2="1126" y2="201" stroke="#1b2230" stroke-width="3"/>
+<text x="1120" y="161" font-size="13" fill="#1b2230" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">C6 1uF</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1160,185 1230,185"/>
+<circle cx="1190" cy="185" r="3.5" fill="#1b2230"/>
+<text x="1075" y="165" font-size="12" fill="#0b6e4f" text-anchor="middle" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">SCOPE_AC</text>
+<text x="1198" y="170" font-size="12" fill="#0b6e4f" text-anchor="start" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">SCOPE_OUT</text>
+<text x="1260" y="190" font-size="11" fill="#0b6e4f" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">J3.1 → scope</text>
+<text x="1260" y="206" font-size="11" fill="#475569" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">(AC-coupled)</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1190,185 1190,220"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1190,220 1190,230"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1190,290 1190,300"/>
+<rect x="1181" y="230" width="18" height="60" fill="none" stroke="#1b2230" stroke-width="2"/>
+<text x="1206" y="264" font-size="13" fill="#1b2230" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">R8 100kΩ</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1190,300 1190,318"/>
+<text x="1190" y="336" font-size="12" fill="#0b6e4f" text-anchor="middle" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">R8_RET</text>
+<text x="1205" y="352" font-size="11" fill="#475569" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">JP1: 1-2 GND (scope) · 2-3 VBIAS (MCU ADC tap)</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1190,185 1190,120 1300,120"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1300,120 1310,120"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1370,120 1380,120"/>
+<rect x="1310" y="111" width="60" height="18" fill="none" stroke="#1b2230" stroke-width="2"/>
+<text x="1340" y="105" font-size="13" fill="#1b2230" text-anchor="middle" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">R10 1kΩ</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="1380,120 1470,120"/>
+<circle cx="1440" cy="120" r="3.5" fill="#1b2230"/>
+<text x="1440" y="98" font-size="12" fill="#0b6e4f" text-anchor="middle" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">ADC_IN</text>
+<text x="1480" y="124" font-size="11" fill="#0b6e4f" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">J4.1 → Nucleo A5 (PC0)</text>
+<text x="1300" y="70" font-size="12" fill="#0b6e4f" text-anchor="start" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">MCU ADC tap (A5 = ADC3 ch10)</text>
+<text x="1300" y="150" font-size="11" fill="#475569" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">D1 BAT54S: ADC_IN to GND and to 3V3</text>
+<text x="1300" y="166" font-size="11" fill="#475569" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">VBIAS = R11/R12 from Nucleo 3V3 = 1.65 V, C9 100 nF</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="500,300 500,320"/>
+<text x="500" y="292" font-size="12" fill="#0b6e4f" text-anchor="middle" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">VCC</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="500,320 500,330"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="500,390 500,400"/>
+<rect x="491" y="330" width="18" height="60" fill="none" stroke="#1b2230" stroke-width="2"/>
+<text x="484" y="364" font-size="13" fill="#1b2230" text-anchor="end" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">R3 100kΩ</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="500,400 500,410"/>
+<circle cx="500" cy="410" r="3.5" fill="#1b2230"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="500,410 500,420"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="500,480 500,490"/>
+<rect x="491" y="420" width="18" height="60" fill="none" stroke="#1b2230" stroke-width="2"/>
+<text x="484" y="454" font-size="13" fill="#1b2230" text-anchor="end" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">R4 100kΩ</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="500,490 500,498"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="500,496 500,502"/>
+<line x1="486" y1="502" x2="514" y2="502" stroke="#1b2230" stroke-width="2"/>
+<line x1="491" y1="507" x2="509" y2="507" stroke="#1b2230" stroke-width="2"/>
+<line x1="496" y1="512" x2="504" y2="512" stroke="#1b2230" stroke-width="2"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="500,410 560,410"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="560,410 560,444"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="560,456 560,490"/>
+<line x1="544" y1="444" x2="576" y2="444" stroke="#1b2230" stroke-width="3"/><line x1="544" y1="456" x2="576" y2="456" stroke="#1b2230" stroke-width="3"/>
+<text x="584" y="454" font-size="13" fill="#1b2230" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">C4 100nF</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="560,490 560,496"/>
+<line x1="546" y1="496" x2="574" y2="496" stroke="#1b2230" stroke-width="2"/>
+<line x1="551" y1="501" x2="569" y2="501" stroke="#1b2230" stroke-width="2"/>
+<line x1="556" y1="506" x2="564" y2="506" stroke="#1b2230" stroke-width="2"/>
+<text x="530" y="405" font-size="12" fill="#0b6e4f" text-anchor="middle" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">VMID</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="500,410 500,410"/>
+<text x="800" y="392" font-size="12" fill="#0b6e4f" text-anchor="middle" font-weight="600" font-family="IBM Plex Mono, Menlo, monospace">VCC</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="800,400 800,410"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="800,410 800,444"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="800,456 800,490"/>
+<line x1="784" y1="444" x2="816" y2="444" stroke="#1b2230" stroke-width="3"/><line x1="784" y1="456" x2="816" y2="456" stroke="#1b2230" stroke-width="3"/>
+<text x="824" y="454" font-size="13" fill="#1b2230" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">C7 100nF</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="800,490 800,496"/>
+<line x1="786" y1="496" x2="814" y2="496" stroke="#1b2230" stroke-width="2"/>
+<line x1="791" y1="501" x2="809" y2="501" stroke="#1b2230" stroke-width="2"/>
+<line x1="796" y1="506" x2="804" y2="506" stroke="#1b2230" stroke-width="2"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="800,410 930,410"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="930,410 930,444"/>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="930,456 930,490"/>
+<line x1="914" y1="444" x2="946" y2="444" stroke="#1b2230" stroke-width="3"/><line x1="914" y1="456" x2="946" y2="456" stroke="#1b2230" stroke-width="3"/>
+<text x="954" y="454" font-size="13" fill="#1b2230" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">C8 10uF</text>
+<polyline fill="none" stroke="#1b2230" stroke-width="2" points="930,490 930,496"/>
+<line x1="916" y1="496" x2="944" y2="496" stroke="#1b2230" stroke-width="2"/>
+<line x1="921" y1="501" x2="939" y2="501" stroke="#1b2230" stroke-width="2"/>
+<line x1="926" y1="506" x2="934" y2="506" stroke="#1b2230" stroke-width="2"/>
+<text x="1030" y="380" font-size="12" fill="#1b2230" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">U1 pin 8 = VCC, pin 4 = GND (TLV9062 SOIC-8)</text>
+<text x="1030" y="398" font-size="12" fill="#475569" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">VCC: Nucleo CN6 5V pin, USB powered. Abs max 6 V.</text>
+<text x="1030" y="416" font-size="12" fill="#475569" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">VMID = VCC/2 = 2.5 V sets stage-2 bias.</text>
+<text x="1030" y="440" font-size="12" fill="#b45309" text-anchor="start" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">Test points: TP1 DAC_PA4 · TP2 FILTER_OUT · TP3 OPAMP_OUT · TP4 GND</text>
+<text x="1030" y="458" font-size="12" fill="#475569" text-anchor="start" font-weight="400" font-family="IBM Plex Mono, Menlo, monospace">Keep J1 ground and scope ground on one star point.</text>
+<text x="1030" y="476" font-size="12" fill="#b91c1c" text-anchor="start" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">Only ADC_IN (after R10 + D1, JP1 on VBIAS) may go to a Nucleo pin.</text>
+<text x="1030" y="494" font-size="12" fill="#b91c1c" text-anchor="start" font-weight="700" font-family="IBM Plex Mono, Menlo, monospace">Never OPAMP_OUT or an un-biased SCOPE_OUT.</text>
+</g>
+</svg>

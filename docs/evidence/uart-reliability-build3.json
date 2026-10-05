@@ -1,0 +1,227 @@
+{
+ "status": "PARTIAL: 4 of 5 traffic patterns run (back-to-back, 100 ms, 500 ms, 1 s idle gaps); the 2 s idle-gap pattern was NOT run because build 3 had clearly failed the acceptance target and each lost command costs a 2 s timeout",
+ "build": "build 3 e4161222fb874db7e4249cf924bab07e27b7020dad7b7d41fb4d5ec90e6b8fed",
+ "path": "bridge HTTP API + WebSocket heartbeat (real web control path)",
+ "outputEverEnabled": false,
+ "start": {
+  "firmware": "AquaSDR sensors + adaptive TX 0.4.0",
+  "uart": {
+   "bytes": 54,
+   "lines": 1,
+   "invalid": 0
+  },
+  "outputEnabled": false,
+  "link": {
+   "ready": true,
+   "status": "ACCEPTED",
+   "pending": false,
+   "unknown": false,
+   "error": null,
+   "backend": "STM32"
+  }
+ },
+ "phases": [
+  {
+   "phase": "back-to-back",
+   "gapMs": 0,
+   "sent": 120,
+   "accepted": 96,
+   "rejected": 7,
+   "rejectedWhy": [
+    "SOURCE_NOT_WEB"
+   ],
+   "lost": 17,
+   "blocked": 0,
+   "deviceDelta": {
+    "bytes": 10308,
+    "lines": 125,
+    "invalid": 9
+   },
+   "bridgeKeepalivesAndHandshakeLines": 5,
+   "latencyMs": {
+    "median": 16,
+    "p95": 160,
+    "max": 401,
+    "n": 103
+   },
+   "uptimeBefore": 189855,
+   "uptimeAfter": 250382,
+   "deviceReset": false,
+   "lostDetail": [
+    "SET_ENV CLEAR",
+    "GET_STATUS",
+    "SET_ENV SEDIMENT",
+    "SET_ENV DEEP",
+    "SET_ENV MUDDY",
+    "PING",
+    "SET_ENV CLEAR",
+    "GET_STATUS",
+    "source WEB_COMMAND",
+    "SET_ENV CLEAR",
+    "SET_ENV MUDDY",
+    "PING",
+    "SET_ENV SEDIMENT",
+    "SET_ENV DEEP",
+    "source WEB_COMMAND",
+    "SET_ENV CLEAR",
+    "source ADC_DIAL"
+   ]
+  },
+  {
+   "phase": "100 ms spacing",
+   "gapMs": 100,
+   "sent": 80,
+   "accepted": 62,
+   "rejected": 0,
+   "rejectedWhy": [],
+   "lost": 18,
+   "blocked": 0,
+   "deviceDelta": {
+    "bytes": 8702,
+    "lines": 113,
+    "invalid": 9
+   },
+   "bridgeKeepalivesAndHandshakeLines": 33,
+   "latencyMs": {
+    "median": 17,
+    "p95": 145,
+    "max": 153,
+    "n": 62
+   },
+   "uptimeBefore": 251382,
+   "uptimeAfter": 317344,
+   "deviceReset": false,
+   "lostDetail": [
+    "SET_ENV MUDDY",
+    "PING",
+    "SET_ENV DEEP",
+    "source ADC_DIAL",
+    "source WEB_COMMAND",
+    "SET_ENV CLEAR",
+    "SET_ENV MUDDY",
+    "PING",
+    "source ADC_DIAL",
+    "source WEB_COMMAND",
+    "source ADC_DIAL",
+    "source WEB_COMMAND",
+    "source ADC_DIAL",
+    "source WEB_COMMAND",
+    "SET_ENV_VALUES",
+    "STOP",
+    "source ADC_DIAL",
+    "source WEB_COMMAND"
+   ]
+  },
+  {
+   "phase": "500 ms spacing",
+   "gapMs": 500,
+   "sent": 60,
+   "accepted": 32,
+   "rejected": 4,
+   "rejectedWhy": [
+    "SOURCE_NOT_WEB"
+   ],
+   "lost": 24,
+   "blocked": 0,
+   "deviceDelta": {
+    "bytes": 6835,
+    "lines": 86,
+    "invalid": 12
+   },
+   "bridgeKeepalivesAndHandshakeLines": 26,
+   "latencyMs": {
+    "median": 17,
+    "p95": 193,
+    "max": 321,
+    "n": 36
+   },
+   "uptimeBefore": 318344,
+   "uptimeAfter": 416401,
+   "deviceReset": false,
+   "lostDetail": [
+    "SET_ENV MUDDY",
+    "PING",
+    "SET_ENV_VALUES",
+    "STOP",
+    "source WEB_COMMAND",
+    "SET_ENV CLEAR",
+    "SET_ENV SEDIMENT",
+    "SET_ENV DEEP",
+    "source WEB_COMMAND",
+    "SET_ENV CLEAR",
+    "SET_ENV SEDIMENT",
+    "SET_ENV DEEP",
+    "SET_ENV CLEAR",
+    "GET_STATUS",
+    "SET_ENV MUDDY",
+    "PING",
+    "SET_ENV DEEP",
+    "source ADC_DIAL",
+    "SET_ENV_VALUES",
+    "STOP",
+    "SET_ENV DEEP",
+    "source ADC_DIAL",
+    "SET_ENV_VALUES",
+    "STOP"
+   ]
+  },
+  {
+   "phase": "1 s idle gaps",
+   "gapMs": 1000,
+   "sent": 40,
+   "accepted": 29,
+   "rejected": 1,
+   "rejectedWhy": [
+    "SOURCE_NOT_WEB"
+   ],
+   "lost": 10,
+   "blocked": 0,
+   "deviceDelta": {
+    "bytes": 6126,
+    "lines": 84,
+    "invalid": 5
+   },
+   "bridgeKeepalivesAndHandshakeLines": 44,
+   "latencyMs": {
+    "median": 16,
+    "p95": 147,
+    "max": 194,
+    "n": 30
+   },
+   "uptimeBefore": 417429,
+   "uptimeAfter": 483869,
+   "deviceReset": false,
+   "lostDetail": [
+    "SET_ENV MUDDY",
+    "PING",
+    "SET_ENV SEDIMENT",
+    "SET_ENV DEEP",
+    "source WEB_COMMAND",
+    "SET_ENV CLEAR",
+    "SET_ENV MUDDY",
+    "PING",
+    "SET_ENV SEDIMENT",
+    "SET_ENV DEEP"
+   ]
+  }
+ ],
+ "totals": {
+  "sent": 300,
+  "accepted": 219,
+  "rejected": 12,
+  "lost": 69,
+  "blocked": 0
+ },
+ "deviceTotals": {
+  "bytes": 31971,
+  "lines": 408,
+  "invalid": 35
+ },
+ "ratesLostPct": {
+  "back-to-back": 14.2,
+  "100 ms spacing": 22.5,
+  "500 ms spacing": 40.0,
+  "1 s idle gaps": 25.0
+ },
+ "totalLostPct": 23.0
+}

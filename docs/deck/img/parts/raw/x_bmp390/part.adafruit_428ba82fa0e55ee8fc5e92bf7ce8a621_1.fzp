@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module referenceFile="BMP390 QT rev B.fzp" fritzingVersion="0.5.2b.02.18.4756" moduleId="adafruit_428ba82fa0e55ee8fc5e92bf7ce8a621_1">
+ <version>4</version>
+ <date>Wed Nov 4 2020</date>
+ <author>kattni</author>
+ <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Bosch has been a leader in barometric pressure sensors, from the &lt;a href="https://www.adafruit.com/product/391">&lt;span style=" text-decoration: underline; color:#0000ff;">BMP085&lt;/span>&lt;/a>. &lt;a href="https://www.adafruit.com/product/1603">&lt;span style=" text-decoration: underline; color:#0000ff;">BMP180&lt;/span>&lt;/a>, &lt;a href="https://www.adafruit.com/product/2651">&lt;span style=" text-decoration: underline; color:#0000ff;">BMP280&lt;/span>&lt;/a>, &lt;a href="https://www.adafruit.com/product/3966">&lt;span style=" text-decoration: underline; color:#0000ff;">BMP388&lt;/span>&lt;/a>... now we've got the next generation, the &lt;span style=" font-weight:600;">Adafruit BMP390 Precision Barometric Pressure and Altimeter Breakout&lt;/span>. As you would expect, this sensor is similar to its earlier versions but &lt;span style=" font-style:italic;">even better&lt;/span>. The BMP390 has better precision than ever, which makes it excellent for environmental sensing or as a &lt;span style=" font-weight:600;">precision altimeter&lt;/span>. It can even be used in either I2C and SPI configurations.&lt;/p>
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">The BMP390 is the next-generation of sensors from Bosch and is the upgrade to the BMP280 and BMP388 - with a low-altitude noise as low as 0.1m and the same fast conversion time. And like the previous BMP280, you can use I2C or SPI. For simple easy wiring, go with I2C. If you want to connect a bunch of sensors without worrying about I2C address collisions, go with SPI.&lt;/p>
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This sensor has a relative accuracy of ±3 Pascals, which translates to about ±0.25 meters of altitude (compare to the BMP280's ±12 Pascal/±1 meter and BMP388's ±8 Pascal/±0.5 meter). The datasheet sort of implies they intend this sensor to be used for drones and quadcopters, to keep altitude stable, but you could also use this for wearables or any project that wants to track height-above-sea-level. Note that for absolute height you'll still need to enter in the barometric pressure at sea level if the weather changes, but that's true of every altimeter sensor that uses pressure. You can also measure temperature with ±0.5°C accuracy.&lt;/p>
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Nice sensor right? So we made it easy for you to get right into your next project. The surface-mount sensor is soldered onto a custom made PCB in the &lt;a href="https://www.adafruit.com/?q=stemma%20qt%20sensor">&lt;span style=" font-weight:600; text-decoration: underline; color:#0000ff;">STEMMA QT&lt;/span>&lt;/a>&lt;a href="https://www.adafruit.com/?q=stemma%20qt%20sensor">&lt;span style=" text-decoration: underline; color:#0000ff;"> form factor&lt;/span>&lt;/a>, making them easy to interface with. The &lt;a href="https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt">&lt;span style=" text-decoration: underline; color:#0000ff;">STEMMA QT connectors&lt;/span>&lt;/a> on either side are compatible with the &lt;a href="https://www.sparkfun.com/qwiic">&lt;span style=" text-decoration: underline; color:#0000ff;">SparkFun Qwiic&lt;/span>&lt;/a> I2C connectors. This allows you to make solderless connections between your development board and the BMP390 or to chain it with a wide range of other sensors and accessories using a &lt;a href="https://www.adafruit.com/?q=stemma%20qt%20cable">&lt;span style=" font-weight:600; text-decoration: underline; color:#0000ff;">compatible cable&lt;/span>&lt;/a>. &lt;/p>
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Nice sensor right? So we made it easy for you to get right into your next project. The surface-mount sensor is soldered onto a PCB and comes with a 3.3V regulator and level shifting so you can use it with a 3V or 5V logic microcontroller without worry. &lt;a href="https://github.com/adafruit/Adafruit_BMP3XX">&lt;span style=" text-decoration: underline; color:#0000ff;">Check out the Arduino library to get data out in under 10 minutes!&lt;/span>&lt;/a>&lt;/p>
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;a href="https://learn.adafruit.com/adafruit-bmp388">&lt;span style=" font-weight:600; text-decoration: underline; color:#0000ff;">Check out the tutorial guide for wiring diagrams, code libraries, datasheets, schematics and more!&lt;/span>&lt;/a>&lt;/p>&lt;/body>&lt;/html></description>
+ <title>Adafruit BMP390</title>
+ <tags/>
+ <properties>
+  <property name="layer"></property>
+  <property name="part number">Adafruit #4816</property>
+  <property name="variant">variant 1</property>
+  <property name="family">Adafruit BMP390</property>
+ </properties>
+ <views>
+  <breadboardView>
+   <layers image="breadboard/adafruit_428ba82fa0e55ee8fc5e92bf7ce8a621_1_breadboard.svg">
+    <layer layerId="breadboard"/>
+   </layers>
+  </breadboardView>
+  <schematicView>
+   <layers image="schematic/adafruit_428ba82fa0e55ee8fc5e92bf7ce8a621_1_schematic.svg">
+    <layer layerId="schematic"/>
+   </layers>
+  </schematicView>
+  <pcbView>
+   <layers image="pcb/adafruit_428ba82fa0e55ee8fc5e92bf7ce8a621_1_pcb.svg">
+    <layer layerId="copper1"/>
+    <layer layerId="silkscreen"/>
+    <layer layerId="copper0"/>
+   </layers>
+  </pcbView>
+  <iconView>
+   <layers image="icon/adafruit_428ba82fa0e55ee8fc5e92bf7ce8a621_1_icon.svg">
+    <layer layerId="icon"/>
+   </layers>
+  </iconView>
+ </views>
+ <connectors>
+  <connector id="connector39" name="VCC" type="male">
+   <description>VCC</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector39pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector39pin" layer="schematic" terminalId="connector39terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector39pad" layer="copper0"/>
+     <p svgId="connector39pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector12" name="VCC" type="male">
+   <description>VCC</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector12pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector12pin" layer="schematic" terminalId="connector12terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector12pad" layer="copper0"/>
+     <p svgId="connector12pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector18" name="VCC" type="male">
+   <description>VCC</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector18pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector18pin" layer="schematic" terminalId="connector18terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector18pad" layer="copper0"/>
+     <p svgId="connector18pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector40" name="3.3V" type="male">
+   <description>3.3V</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector40pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector40pin" layer="schematic" terminalId="connector40terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector40pad" layer="copper0"/>
+     <p svgId="connector40pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector42" name="SCK/SCL" type="male">
+   <description>SCK/SCL</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector42pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector42pin" layer="schematic" terminalId="connector42terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector42pad" layer="copper0"/>
+     <p svgId="connector42pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector14" name="SCK/SCL" type="male">
+   <description>SCK/SCL</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector14pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector14pin" layer="schematic" terminalId="connector14terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector14pad" layer="copper0"/>
+     <p svgId="connector14pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector20" name="SCK/SCL" type="male">
+   <description>SCK/SCL</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector20pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector20pin" layer="schematic" terminalId="connector20terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector20pad" layer="copper0"/>
+     <p svgId="connector20pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector43" name="SDO/ADR" type="male">
+   <description>SDO/ADR</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector43pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector43pin" layer="schematic" terminalId="connector43terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector43pad" layer="copper0"/>
+     <p svgId="connector43pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector44" name="SDI/SDA" type="male">
+   <description>SDI/SDA</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector44pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector44pin" layer="schematic" terminalId="connector44terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector44pad" layer="copper0"/>
+     <p svgId="connector44pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector13" name="SDI/SDA" type="male">
+   <description>SDI/SDA</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector13pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector13pin" layer="schematic" terminalId="connector13terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector13pad" layer="copper0"/>
+     <p svgId="connector13pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector19" name="SDI/SDA" type="male">
+   <description>SDI/SDA</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector19pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector19pin" layer="schematic" terminalId="connector19terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector19pad" layer="copper0"/>
+     <p svgId="connector19pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector45" name="CS" type="male">
+   <description>CS</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector45pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector45pin" layer="schematic" terminalId="connector45terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector45pad" layer="copper0"/>
+     <p svgId="connector45pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector46" name="INT" type="male">
+   <description>INT</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector46pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector46pin" layer="schematic" terminalId="connector46terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector46pad" layer="copper0"/>
+     <p svgId="connector46pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector41" name="GND" type="male">
+   <description>GND</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector41pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector41pin" layer="schematic" terminalId="connector41terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector41pad" layer="copper0"/>
+     <p svgId="connector41pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector11" name="GND" type="male">
+   <description>GND</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector11pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector11pin" layer="schematic" terminalId="connector11terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector11pad" layer="copper0"/>
+     <p svgId="connector11pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+  <connector id="connector17" name="GND" type="male">
+   <description>GND</description>
+   <views>
+    <breadboardView>
+     <p svgId="connector17pin" layer="breadboard"/>
+    </breadboardView>
+    <schematicView>
+     <p svgId="connector17pin" layer="schematic" terminalId="connector17terminal"/>
+    </schematicView>
+    <pcbView>
+     <p svgId="connector17pad" layer="copper0"/>
+     <p svgId="connector17pad" layer="copper1"/>
+    </pcbView>
+   </views>
+  </connector>
+ </connectors>
+ <buses>
+  <bus id="gnd">
+   <nodeMember connectorId="connector41"/>
+   <nodeMember connectorId="connector11"/>
+   <nodeMember connectorId="connector17"/>
+  </bus>
+  <bus id="vcc">
+   <nodeMember connectorId="connector39"/>
+   <nodeMember connectorId="connector12"/>
+   <nodeMember connectorId="connector18"/>
+  </bus>
+  <bus id="sdi/sda">
+   <nodeMember connectorId="connector44"/>
+   <nodeMember connectorId="connector13"/>
+   <nodeMember connectorId="connector19"/>
+  </bus>
+  <bus id="sck/scl">
+   <nodeMember connectorId="connector42"/>
+   <nodeMember connectorId="connector14"/>
+   <nodeMember connectorId="connector20"/>
+  </bus>
+ </buses>
+ <url>https://www.adafruit.com/product/4816</url>
+</module>

@@ -1,0 +1,159 @@
+[
+ {
+  "op": "hello",
+  "args": {},
+  "id": 1,
+  "ack": "ACCEPTED",
+  "reason": "",
+  "ackLatencyMs": 13
+ },
+ {
+  "op": "source",
+  "args": {
+   "source": "WEB_COMMAND"
+  },
+  "id": 2,
+  "ack": "ACCEPTED",
+  "reason": "",
+  "ackLatencyMs": 14
+ },
+ {
+  "op": "preset",
+  "args": {
+   "profile": "CLEAR_SHALLOW_REEF"
+  },
+  "id": 3,
+  "ack": "ACCEPTED",
+  "reason": "",
+  "ackLatencyMs": 15
+ },
+ {
+  "snapshot": "web CLEAR_SHALLOW_REEF",
+  "source": "WEB_COMMAND",
+  "profile": "CLEAR_SHALLOW_REEF",
+  "qualified": true,
+  "policy": "CLEAR",
+  "outputEnabled": false,
+  "state": "INHIBITED",
+  "requested": {
+   "mode": "LFM CHIRP",
+   "frequency": 42.0,
+   "bandwidth": 4.0,
+   "pulse": 2.0,
+   "amplitude": 35.0,
+   "window": "HANN"
+  },
+  "applied": null,
+  "DAC": "INHIBITED MID SCALE",
+  "underruns": 0
+ },
+ {
+  "op": "preset",
+  "args": {
+   "profile": "MUDDY_ESTUARY"
+  },
+  "id": 4,
+  "ack": null,
+  "reason": null,
+  "ackLatencyMs": null
+ },
+ {
+  "snapshot": "web MUDDY_ESTUARY",
+  "source": "WEB_COMMAND",
+  "profile": "CLEAR_SHALLOW_REEF",
+  "qualified": false,
+  "policy": "CLEAR",
+  "outputEnabled": false,
+  "state": "INHIBITED",
+  "requested": null,
+  "applied": null,
+  "DAC": "INHIBITED MID SCALE",
+  "underruns": 0
+ },
+ {
+  "op": "keepalive",
+  "args": {},
+  "id": 5,
+  "ack": null,
+  "reason": null,
+  "ackLatencyMs": null
+ },
+ {
+  "op": "keepalive",
+  "args": {},
+  "id": 6,
+  "ack": "ACCEPTED",
+  "reason": "",
+  "ackLatencyMs": 102
+ },
+ {
+  "op": "keepalive",
+  "args": {},
+  "id": 7,
+  "ack": "ACCEPTED",
+  "reason": "",
+  "ackLatencyMs": 14
+ },
+ {
+  "op": "keepalive",
+  "args": {},
+  "id": 8,
+  "ack": "ACCEPTED",
+  "reason": "",
+  "ackLatencyMs": 72
+ },
+ {
+  "op": "keepalive",
+  "args": {},
+  "id": 9,
+  "ack": "ACCEPTED",
+  "reason": "",
+  "ackLatencyMs": 13
+ },
+ {
+  "op": "keepalive",
+  "args": {},
+  "id": 10,
+  "ack": "ACCEPTED",
+  "reason": "",
+  "ackLatencyMs": 13
+ },
+ {
+  "op": "source",
+  "args": {
+   "source": "ADC_DIAL"
+  },
+  "id": 11,
+  "ack": "ACCEPTED",
+  "reason": "",
+  "ackLatencyMs": 14
+ },
+ {
+  "snapshot": "restored A0/TDS",
+  "source": "ADC_DIAL",
+  "profile": "ADC_DIAL",
+  "qualified": true,
+  "policy": "CLEAR",
+  "outputEnabled": false,
+  "state": "INHIBITED",
+  "requested": {
+   "mode": "LFM CHIRP",
+   "frequency": 42.0,
+   "bandwidth": 4.0,
+   "pulse": 2.0,
+   "amplitude": 35.0,
+   "window": "HANN"
+  },
+  "applied": null,
+  "DAC": "INHIBITED MID SCALE",
+  "underruns": 0
+ },
+ {
+  "op": "stop",
+  "args": {},
+  "id": 12,
+  "ack": "ACCEPTED",
+  "reason": "",
+  "ackLatencyMs": 12
+ }
+]
