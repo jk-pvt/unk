@@ -21,31 +21,47 @@ import { McuCaptureCoordinator } from "./mcu-coordinator.js";
 import { DEFAULT_TAP, checkTap, predictedAdcRange } from "../shared/mcu-capture.js";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dataRoot = process.env.AQUASDR_DATA_DIR || resolve(root, "data");
-const bridgePort = Number(process.env.PORT || 4318);
+const bridgePort = Number(process.env.PORT || 6002);
+const host = process.env.HOST || "0.0.0.0";
+const allowedHosts = process.env.ALLOWED_HOSTS
+  ? process.env.ALLOWED_HOSTS.split(",").map((s) => s.trim())
+  : null;
+const allowedOrigins = process.env.ALLOWED_ORIGINS
+  ? process.env.ALLOWED_ORIGINS.split(",").map((s) => s.trim())
+  : [
+      "http://localhost:5173",
+      "http://127.0.0.1:5173",
+      "http://localhost:6002",
+      "http://127.0.0.1:6002",
+      `http://localhost:${bridgePort}`,
+      `http://127.0.0.1:${bridgePort}`,
+    ];
+const wsPath = process.env.WS_PATH || "/ws/telemetry";
+const maxPayload = Number(process.env.WS_MAX_PAYLOAD || 1048576);
+
 const app = express(),
   server = createServer(app);
 const wss = new WebSocketServer({
   server,
-  path: "/ws/telemetry",
-  maxPayload: 1048576,
+  path: wsPath,
+  maxPayload: maxPayload,
 });
-app.use(express.json({ limit: "1mb" }));
-// Loopback only. Reject cross-origin mutations (including DNS rebinding).
+app.use(express.json({ limit: process.env.JSON_LIMIT || "1mb" }));
+
+// Security & CORS validation middleware
 app.use((req, res, next) => {
-  const host = (req.headers.host || "").split(":")[0];
-  if (!["localhost", "127.0.0.1"].includes(host))
-    return res.status(403).json({ error: "Local access only" });
+  const reqHost = (req.headers.host || "").split(":")[0];
+  if (allowedHosts && !allowedHosts.includes(reqHost) && !allowedHosts.includes("*")) {
+    return res.status(403).json({ error: "Host denied" });
+  }
   if (
     req.method !== "GET" &&
     req.headers.origin &&
-    ![
-      "http://localhost:5173",
-      "http://127.0.0.1:5173",
-      `http://localhost:${bridgePort}`,
-      `http://127.0.0.1:${bridgePort}`,
-    ].includes(req.headers.origin)
-  )
+    !allowedOrigins.includes("*") &&
+    !allowedOrigins.includes(req.headers.origin)
+  ) {
     return res.status(403).json({ error: "Origin denied" });
+  }
   next();
 });
 let config = { ...DEFAULT_CONFIG },
@@ -788,6 +804,6 @@ app.use((error, req, res, next) => {
   console.error(error.message);
   res.status(500).json({ error: "Request could not be completed" });
 });
-server.listen(bridgePort, "127.0.0.1", () =>
-  console.log(`AquaSDR bridge · http://127.0.0.1:${bridgePort}`),
+server.listen(bridgePort, host, () =>
+  console.log(`AquaSDR bridge · http://${host}:${bridgePort}`),
 );

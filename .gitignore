@@ -10,3 +10,5 @@ firmware/build-adaptive/
 firmware/build-host/
 !data/bench/
 arduino/*/build*/
+.env
+.env.local
