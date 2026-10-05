@@ -8,7 +8,7 @@ export function Welcome({ connected, hardware, onDemo, onConnect, onExisting }) 
   const [rotating, setRotating] = useState(true);
   const [ports, setPorts] = useState([]), [port, setPort] = useState('');
   const [busy, setBusy] = useState(false), [error, setError] = useState('');
-  const local = true; // Allow hardware connection from any host (VPS backend ports)
+  const local = true;
   useEffect(() => {
     const node = dialog.current;
     node.showModal();
@@ -47,9 +47,9 @@ export function Welcome({ connected, hardware, onDemo, onConnect, onExisting }) 
         <button autoFocus className="welcome-primary" disabled={busy} onClick={chooseHardware}><Cable size={17}/> Connect AquaSDR payload <ArrowRight size={16}/></button>
       </> : <>
         <button className="welcome-back" disabled={busy} onClick={() => {setStep('choose');setError('');}}><ArrowLeft size={13}/> Back</button>
-        <h1 id="welcome-title">{local ? 'Connect over USB.' : 'Use your local console.'}</h1>
-        <p id="welcome-description">{local ? 'Plug the payload into this computer, then select its serial port.' : 'This hosted console cannot access your USB payload yet. Start the AquaSDR bridge on your computer and connect through its local console.'}</p>
-        {local ? hardware?.connected ? <>
+        <h1 id="welcome-title">Connect over USB.</h1>
+        <p id="welcome-description">Plug the payload into this computer, then select its serial port.</p>
+        {hardware?.connected ? <>
           <div className="welcome-link-state" role="status">{hardware.fresh ? 'Payload telemetry received' : 'Serial port open · waiting for telemetry'}</div>
           <button className="welcome-primary" disabled={busy} onClick={onExisting}>Open payload console <ArrowRight size={16}/></button>
         </> : <>
@@ -58,7 +58,7 @@ export function Welcome({ connected, hardware, onDemo, onConnect, onExisting }) 
             <div><select id="welcome-port" value={port} disabled={busy} onChange={e => setPort(e.target.value)}><option value="">{busy ? 'Looking for ports…' : ports.length ? 'Select a port' : 'No ports found'}</option>{ports.map(p => <option key={p.path} value={p.path}>{p.path}{p.manufacturer ? ` · ${p.manufacturer}` : ''}</option>)}</select><button className="ibtn" aria-label="Refresh serial ports" disabled={busy} onClick={() => run(scan)}><RefreshCw size={16}/></button></div>
           </div>
           <button className="welcome-primary" disabled={busy || !port || !connected} onClick={() => run(() => onConnect(port))}><Cable size={17}/>{busy ? 'Connecting…' : 'Connect selected payload'}<ArrowRight size={16}/></button>
-        </> : <a className="welcome-primary" href="http://127.0.0.1:4318/" target="_blank" rel="noopener noreferrer">Open local AquaSDR console <ArrowRight size={16}/></a>}
+        </>}
       </>}
       <button className="welcome-demo" disabled={busy || !connected} onClick={() => run(onDemo)}>{busy ? 'Please wait…' : 'Continue with demo mode'} <ArrowRight size={14}/></button>
       {error && <p className="welcome-error" role="alert">{error}</p>}
