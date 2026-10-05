@@ -21,7 +21,7 @@ import { McuCaptureCoordinator } from "./mcu-coordinator.js";
 import { DEFAULT_TAP, checkTap, predictedAdcRange } from "../shared/mcu-capture.js";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dataRoot = process.env.AQUASDR_DATA_DIR || resolve(root, "data");
-const bridgePort = Number(process.env.PORT || 6002);
+const bridgePort = Number(process.env.PORT || 4318);
 const host = process.env.HOST || "0.0.0.0";
 const allowedHosts = process.env.ALLOWED_HOSTS
   ? process.env.ALLOWED_HOSTS.split(",").map((s) => s.trim())
