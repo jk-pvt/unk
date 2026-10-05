@@ -1,11 +1,38 @@
-# Nginx Server Configuration for AquaSDR Backend & WebSocket
-# Subdomain: aquasdr.velotriz.cloud
-# Backend Port: 6002
+# Host Nginx for AquaSDR (TLS terminator in front of the Docker stack)
+# Domain: aquasdr.in (+ www) -> 127.0.0.1:6002 (internal Nginx container)
+# Issue the certificate with:
+#   sudo certbot --nginx -d aquasdr.in -d www.aquasdr.in
 
 server {
     listen 80;
     listen [::]:80;
-    server_name aquasdr.velotriz.cloud;
+    server_name aquasdr.in www.aquasdr.in;
+
+    return 301 https://aquasdr.in$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    server_name www.aquasdr.in;
+
+    ssl_certificate /etc/letsencrypt/live/aquasdr.in/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/aquasdr.in/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+    return 301 https://aquasdr.in$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    server_name aquasdr.in;
+
+    ssl_certificate /etc/letsencrypt/live/aquasdr.in/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/aquasdr.in/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
     location / {
         proxy_pass http://127.0.0.1:6002;
@@ -15,7 +42,6 @@ server {
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
 
-        # Standard headers
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
